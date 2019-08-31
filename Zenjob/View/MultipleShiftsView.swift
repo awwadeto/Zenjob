@@ -143,8 +143,21 @@ class MultipleShiftsView: UIView {
 
   func populate(shifts: [Shift]) {
     fitSizes()
+    startDateLabel.text = shifts.first?.beginDate.toString()
+    endDateLabel.text = shifts.first?.beginDate.toString()
+
+    if let beginDate = shifts.first?.beginDate , let endDate = shifts.first?.endDate {
+      startTimeLabel.text = "\(beginDate.timeIn24HourFormat()) - \(endDate.timeIn24HourFormat())"
+    }
+
+    if let beginDate = shifts.last?.beginDate , let endDate = shifts.last?.endDate {
+      endTimeLabel.text = "\(beginDate.timeIn24HourFormat()) - \(endDate.timeIn24HourFormat())"
+    }
+
     startTimeIcon.image = UIImage(named: "clock")
     endTimeIcon.image = UIImage(named: "clock")
+
+    shiftsLabel.text = shifts.count - 2 <= 0 ? "" : "+\(shifts.count - 2) Shifts"
   }
 
   private func fitSizes() {

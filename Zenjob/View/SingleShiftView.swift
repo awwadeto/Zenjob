@@ -75,6 +75,11 @@ class SingleShiftView: UIView {
 
   func populate(shifts: [Shift]) {
     fitSizes()
+    dateLabel.text = shifts.first?.beginDate.toString()
+
+    if let beginDate = shifts.first?.beginDate , let endDate = shifts.first?.endDate {
+      timeLabel.text = "\(beginDate.timeIn24HourFormat()) - \(endDate.timeIn24HourFormat())"
+    }
 
     timeIcon.image = UIImage(named: "clock")
   }

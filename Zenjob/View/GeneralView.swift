@@ -75,8 +75,8 @@ class GeneralView: UIView {
   func populate(offer: Offer) {
     fitSizes()
     titleLabel.text = offer.title
-    totalEarnLabel.text = offer.earningTotal
-    hourlyEarnLabel.text = "\(offer.earningHourly) per hour"
+    totalEarnLabel.text = offer.earningTotal.toCurrency
+    hourlyEarnLabel.text = "\(offer.earningHourly.toCurrency) per hour"
   }
 
   func prepareForReuse() {

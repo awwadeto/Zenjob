@@ -41,6 +41,8 @@
 		46EA1A76231A5531002CAACD /* MultipleShiftsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A75231A5531002CAACD /* MultipleShiftsView.swift */; };
 		46EA1A78231A55BC002CAACD /* Offers+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A77231A55BC002CAACD /* Offers+CollectionView.swift */; };
 		46EA1A7C231A6326002CAACD /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A7B231A6326002CAACD /* UIView+Extension.swift */; };
+		46EA1A80231A63D8002CAACD /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A7F231A63D8002CAACD /* Date+Extension.swift */; };
+		46EA1A82231A63ED002CAACD /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A81231A63ED002CAACD /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,8 @@
 		46EA1A75231A5531002CAACD /* MultipleShiftsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleShiftsView.swift; sourceTree = "<group>"; };
 		46EA1A77231A55BC002CAACD /* Offers+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Offers+CollectionView.swift"; sourceTree = "<group>"; };
 		46EA1A7B231A6326002CAACD /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		46EA1A7F231A63D8002CAACD /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		46EA1A81231A63ED002CAACD /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +277,8 @@
 				46EA1A66231A53F5002CAACD /* UIColor+Extension.swift */,
 				46EA1A68231A5410002CAACD /* CGFloat+Extension.swift */,
 				46EA1A7B231A6326002CAACD /* UIView+Extension.swift */,
+				46EA1A7F231A63D8002CAACD /* Date+Extension.swift */,
+				46EA1A81231A63ED002CAACD /* String+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -429,8 +435,10 @@
 				46EA1A55231A4338002CAACD /* LoginTask.swift in Sources */,
 				46EA19FA231A257D002CAACD /* AppDelegate.swift in Sources */,
 				46EA1A62231A5384002CAACD /* OffersViewController.swift in Sources */,
+				46EA1A80231A63D8002CAACD /* Date+Extension.swift in Sources */,
 				46EA1A44231A3EC8002CAACD /* Dispatcher.swift in Sources */,
 				46EA1A74231A551F002CAACD /* SingleShiftView.swift in Sources */,
+				46EA1A82231A63ED002CAACD /* String+Extension.swift in Sources */,
 				46EA1A72231A54FC002CAACD /* LocationView.swift in Sources */,
 				46EA1A76231A5531002CAACD /* MultipleShiftsView.swift in Sources */,
 				46EA1A53231A4325002CAACD /* UserRequests.swift in Sources */,
