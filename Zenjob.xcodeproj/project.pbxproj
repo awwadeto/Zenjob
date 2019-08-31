@@ -52,6 +52,7 @@
 		46EA1A93231A736A002CAACD /* ShiftsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A92231A736A002CAACD /* ShiftsView.swift */; };
 		46EA1A95231A7386002CAACD /* ZenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A94231A7386002CAACD /* ZenButton.swift */; };
 		46EA1A97231A7396002CAACD /* ShiftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A96231A7396002CAACD /* ShiftCell.swift */; };
+		46EA1A99231A74A8002CAACD /* PlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A98231A74A8002CAACD /* PlaceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,7 @@
 		46EA1A92231A736A002CAACD /* ShiftsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftsView.swift; sourceTree = "<group>"; };
 		46EA1A94231A7386002CAACD /* ZenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenButton.swift; sourceTree = "<group>"; };
 		46EA1A96231A7396002CAACD /* ShiftCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftCell.swift; sourceTree = "<group>"; };
+		46EA1A98231A74A8002CAACD /* PlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +247,7 @@
 				46EA1A8A231A6649002CAACD /* PriceView.swift */,
 				46EA1A8C231A666F002CAACD /* PriceDetailView.swift */,
 				46EA1A92231A736A002CAACD /* ShiftsView.swift */,
+				46EA1A98231A74A8002CAACD /* PlaceView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 				46EA1A95231A7386002CAACD /* ZenButton.swift in Sources */,
 				46EA1A64231A5399002CAACD /* OffersViewModel.swift in Sources */,
 				46EA1A6E231A54B9002CAACD /* MultipleShiftsCell.swift in Sources */,
+				46EA1A99231A74A8002CAACD /* PlaceView.swift in Sources */,
 				46EA1A3A231A3DD2002CAACD /* PricingTable.swift in Sources */,
 				46EA1A70231A54D4002CAACD /* GeneralView.swift in Sources */,
 				46EA1A91231A6692002CAACD /* Double+Extension.swift in Sources */,
