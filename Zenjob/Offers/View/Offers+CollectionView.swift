@@ -36,6 +36,8 @@ extension OffersViewController: UICollectionViewDelegateFlowLayout {
   }
 
   override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    let controller = OfferViewController(dispatcher: viewModel.dispatcher, user: viewModel.user, offer: viewModel.offers[indexPath.row])
+    self.present(controller, animated: true, completion: nil)
   }
 
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
