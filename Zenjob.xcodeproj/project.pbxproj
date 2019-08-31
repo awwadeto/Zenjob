@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		46EA19FA231A257D002CAACD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA19F9231A257D002CAACD /* AppDelegate.swift */; };
-		46EA19FC231A257D002CAACD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA19FB231A257D002CAACD /* ViewController.swift */; };
-		46EA19FF231A257D002CAACD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46EA19FD231A257D002CAACD /* Main.storyboard */; };
 		46EA1A01231A257D002CAACD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46EA1A00231A257D002CAACD /* Assets.xcassets */; };
 		46EA1A04231A257D002CAACD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46EA1A02231A257D002CAACD /* LaunchScreen.storyboard */; };
 		46EA1A0F231A257E002CAACD /* ZenjobTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A0E231A257E002CAACD /* ZenjobTests.swift */; };
@@ -36,8 +34,6 @@
 /* Begin PBXFileReference section */
 		46EA19F6231A257D002CAACD /* Zenjob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zenjob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46EA19F9231A257D002CAACD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		46EA19FB231A257D002CAACD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		46EA19FE231A257D002CAACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46EA1A00231A257D002CAACD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46EA1A03231A257D002CAACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46EA1A05231A257D002CAACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,8 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				46EA19F9231A257D002CAACD /* AppDelegate.swift */,
-				46EA19FB231A257D002CAACD /* ViewController.swift */,
-				46EA19FD231A257D002CAACD /* Main.storyboard */,
 				46EA1A00231A257D002CAACD /* Assets.xcassets */,
 				46EA1A02231A257D002CAACD /* LaunchScreen.storyboard */,
 				46EA1A05231A257D002CAACD /* Info.plist */,
@@ -231,7 +225,6 @@
 			files = (
 				46EA1A04231A257D002CAACD /* LaunchScreen.storyboard in Resources */,
 				46EA1A01231A257D002CAACD /* Assets.xcassets in Resources */,
-				46EA19FF231A257D002CAACD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +249,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EA19FC231A257D002CAACD /* ViewController.swift in Sources */,
 				46EA19FA231A257D002CAACD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,14 +285,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		46EA19FD231A257D002CAACD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				46EA19FE231A257D002CAACD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		46EA1A02231A257D002CAACD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -435,6 +419,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L3MJ748633;
 				INFOPLIST_FILE = Zenjob/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +438,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L3MJ748633;
 				INFOPLIST_FILE = Zenjob/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
