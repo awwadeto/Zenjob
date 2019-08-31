@@ -26,6 +26,12 @@ class OfferViewController: UIViewController, UIScrollViewDelegate {
     return view
   }()
 
+  var priceView: PriceView = {
+    let view = PriceView()
+    view.translatesAutoresizingMaskIntoConstraints = false
+    return view
+  }()
+
   private let dismissButton: UIButton = {
     let button = UIButton()
     button.translatesAutoresizingMaskIntoConstraints = false
@@ -56,6 +62,8 @@ class OfferViewController: UIViewController, UIScrollViewDelegate {
   override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
     generalView.sizeToFit()
+    priceView.sizeToFit()
+
   }
 
   func setupBindings() {
@@ -68,6 +76,8 @@ class OfferViewController: UIViewController, UIScrollViewDelegate {
 
   func populate() {
     generalView.populate(offer: viewModel.offer)
+    priceView.populate(pricingTables: viewModel.offer.pricingTables)
+
   }
 
   func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -93,6 +103,7 @@ class OfferViewController: UIViewController, UIScrollViewDelegate {
     scrollView.addSubview(stackView)
     scrollView.addSubview(dismissButton)
     stackView.addArrangedSubview(generalView)
+    stackView.addArrangedSubview(priceView)
 
     let constraints: [NSLayoutConstraint] = [
       scrollView.leftAnchor.constraint(equalTo: self.view.leftAnchor),
@@ -112,6 +123,9 @@ class OfferViewController: UIViewController, UIScrollViewDelegate {
 
       generalView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
       generalView.heightAnchor.constraint(equalTo: scrollView.heightAnchor, multiplier: 1 / 3),
+
+      priceView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
+      priceView.heightAnchor.constraint(equalTo: scrollView.heightAnchor, multiplier: 1 / 4),
 
     ]
 
