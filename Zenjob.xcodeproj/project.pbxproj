@@ -54,6 +54,7 @@
 		46EA1A97231A7396002CAACD /* ShiftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A96231A7396002CAACD /* ShiftCell.swift */; };
 		46EA1A99231A74A8002CAACD /* PlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A98231A74A8002CAACD /* PlaceView.swift */; };
 		46EA1A9B231A822E002CAACD /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A9A231A822E002CAACD /* DescriptionView.swift */; };
+		46EA1A9D231A83B8002CAACD /* ApplyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A9C231A83B8002CAACD /* ApplyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +128,7 @@
 		46EA1A96231A7396002CAACD /* ShiftCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftCell.swift; sourceTree = "<group>"; };
 		46EA1A98231A74A8002CAACD /* PlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceView.swift; sourceTree = "<group>"; };
 		46EA1A9A231A822E002CAACD /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
+		46EA1A9C231A83B8002CAACD /* ApplyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +253,7 @@
 				46EA1A92231A736A002CAACD /* ShiftsView.swift */,
 				46EA1A98231A74A8002CAACD /* PlaceView.swift */,
 				46EA1A9A231A822E002CAACD /* DescriptionView.swift */,
+				46EA1A9C231A83B8002CAACD /* ApplyView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -494,6 +497,7 @@
 				46EA1A55231A4338002CAACD /* LoginTask.swift in Sources */,
 				46EA19FA231A257D002CAACD /* AppDelegate.swift in Sources */,
 				46EA1A62231A5384002CAACD /* OffersViewController.swift in Sources */,
+				46EA1A9D231A83B8002CAACD /* ApplyView.swift in Sources */,
 				46EA1A89231A652D002CAACD /* OfferViewModel.swift in Sources */,
 				46EA1A80231A63D8002CAACD /* Date+Extension.swift in Sources */,
 				46EA1A44231A3EC8002CAACD /* Dispatcher.swift in Sources */,

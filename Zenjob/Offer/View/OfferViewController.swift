@@ -50,6 +50,12 @@ class OfferViewController: UIViewController, UIScrollViewDelegate {
     return view
   }()
 
+  var applyView: ApplyView = {
+    let view = ApplyView()
+    view.translatesAutoresizingMaskIntoConstraints = false
+    return view
+  }()
+
   private let dismissButton: UIButton = {
     let button = UIButton()
     button.translatesAutoresizingMaskIntoConstraints = false
@@ -84,7 +90,7 @@ class OfferViewController: UIViewController, UIScrollViewDelegate {
     shiftsView.sizeToFit()
     placeView.sizeToFit()
     descriptionView.sizeToFit()
-
+    applyView.sizeToFit()
   }
 
   func setupBindings() {
@@ -101,7 +107,7 @@ class OfferViewController: UIViewController, UIScrollViewDelegate {
     shiftsView.populate(shifts: viewModel.offer.shifts)
     placeView.populate(location: viewModel.offer.location)
     descriptionView.populate(offer: viewModel.offer)
-
+    applyView.populate()
   }
 
   func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -131,6 +137,7 @@ class OfferViewController: UIViewController, UIScrollViewDelegate {
     stackView.addArrangedSubview(shiftsView)
     stackView.addArrangedSubview(placeView)
     stackView.addArrangedSubview(descriptionView)
+    stackView.addArrangedSubview(applyView)
 
     let constraints: [NSLayoutConstraint] = [
       scrollView.leftAnchor.constraint(equalTo: self.view.leftAnchor),
@@ -160,6 +167,7 @@ class OfferViewController: UIViewController, UIScrollViewDelegate {
 
       descriptionView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
 
+      applyView.widthAnchor.constraint(equalTo: scrollView.widthAnchor)
     ]
 
     NSLayoutConstraint.activate(constraints)
