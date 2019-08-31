@@ -35,6 +35,7 @@ public class NetworkDispatcher: Dispatcher {
   private func prepareURLRequest(for request: Request) throws -> URLRequest {
     let url = "\(environment.host)\(request.path)"
     var urlRequest = URLRequest(url: URL(string: url)!)
+    urlRequest.cachePolicy = environment.cachePolicy
     urlRequest.httpMethod = request.method.rawValue
     if let headers = request.headers {
       for header in headers {

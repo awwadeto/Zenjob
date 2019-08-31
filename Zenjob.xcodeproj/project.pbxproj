@@ -33,6 +33,13 @@
 		46EA1A64231A5399002CAACD /* OffersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A63231A5399002CAACD /* OffersViewModel.swift */; };
 		46EA1A67231A53F5002CAACD /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A66231A53F5002CAACD /* UIColor+Extension.swift */; };
 		46EA1A69231A5410002CAACD /* CGFloat+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A68231A5410002CAACD /* CGFloat+Extension.swift */; };
+		46EA1A6C231A54A1002CAACD /* SingleShiftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A6B231A54A1002CAACD /* SingleShiftCell.swift */; };
+		46EA1A6E231A54B9002CAACD /* MultipleShiftsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A6D231A54B9002CAACD /* MultipleShiftsCell.swift */; };
+		46EA1A70231A54D4002CAACD /* GeneralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A6F231A54D4002CAACD /* GeneralView.swift */; };
+		46EA1A72231A54FC002CAACD /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A71231A54FC002CAACD /* LocationView.swift */; };
+		46EA1A74231A551F002CAACD /* SingleShiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A73231A551F002CAACD /* SingleShiftView.swift */; };
+		46EA1A76231A5531002CAACD /* MultipleShiftsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A75231A5531002CAACD /* MultipleShiftsView.swift */; };
+		46EA1A78231A55BC002CAACD /* Offers+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A77231A55BC002CAACD /* Offers+CollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +92,13 @@
 		46EA1A63231A5399002CAACD /* OffersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersViewModel.swift; sourceTree = "<group>"; };
 		46EA1A66231A53F5002CAACD /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		46EA1A68231A5410002CAACD /* CGFloat+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extension.swift"; sourceTree = "<group>"; };
+		46EA1A6B231A54A1002CAACD /* SingleShiftCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleShiftCell.swift; sourceTree = "<group>"; };
+		46EA1A6D231A54B9002CAACD /* MultipleShiftsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleShiftsCell.swift; sourceTree = "<group>"; };
+		46EA1A6F231A54D4002CAACD /* GeneralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralView.swift; sourceTree = "<group>"; };
+		46EA1A71231A54FC002CAACD /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		46EA1A73231A551F002CAACD /* SingleShiftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleShiftView.swift; sourceTree = "<group>"; };
+		46EA1A75231A5531002CAACD /* MultipleShiftsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleShiftsView.swift; sourceTree = "<group>"; };
+		46EA1A77231A55BC002CAACD /* Offers+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Offers+CollectionView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +211,11 @@
 		46EA1A30231A3D40002CAACD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				46EA1A6A231A5493002CAACD /* Cell */,
+				46EA1A6F231A54D4002CAACD /* GeneralView.swift */,
+				46EA1A71231A54FC002CAACD /* LocationView.swift */,
+				46EA1A73231A551F002CAACD /* SingleShiftView.swift */,
+				46EA1A75231A5531002CAACD /* MultipleShiftsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -241,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				46EA1A61231A5384002CAACD /* OffersViewController.swift */,
+				46EA1A77231A55BC002CAACD /* Offers+CollectionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -252,6 +272,15 @@
 				46EA1A68231A5410002CAACD /* CGFloat+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		46EA1A6A231A5493002CAACD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				46EA1A6B231A54A1002CAACD /* SingleShiftCell.swift */,
+				46EA1A6D231A54B9002CAACD /* MultipleShiftsCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,6 +413,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46EA1A78231A55BC002CAACD /* Offers+CollectionView.swift in Sources */,
 				46EA1A67231A53F5002CAACD /* UIColor+Extension.swift in Sources */,
 				46EA1A34231A3DA6002CAACD /* Offer.swift in Sources */,
 				46EA1A59231A4367002CAACD /* GetOffersTask.swift in Sources */,
@@ -397,10 +427,16 @@
 				46EA19FA231A257D002CAACD /* AppDelegate.swift in Sources */,
 				46EA1A62231A5384002CAACD /* OffersViewController.swift in Sources */,
 				46EA1A44231A3EC8002CAACD /* Dispatcher.swift in Sources */,
+				46EA1A74231A551F002CAACD /* SingleShiftView.swift in Sources */,
+				46EA1A72231A54FC002CAACD /* LocationView.swift in Sources */,
+				46EA1A76231A5531002CAACD /* MultipleShiftsView.swift in Sources */,
 				46EA1A53231A4325002CAACD /* UserRequests.swift in Sources */,
 				46EA1A38231A3DC3002CAACD /* Shift.swift in Sources */,
 				46EA1A64231A5399002CAACD /* OffersViewModel.swift in Sources */,
+				46EA1A6E231A54B9002CAACD /* MultipleShiftsCell.swift in Sources */,
 				46EA1A3A231A3DD2002CAACD /* PricingTable.swift in Sources */,
+				46EA1A70231A54D4002CAACD /* GeneralView.swift in Sources */,
+				46EA1A6C231A54A1002CAACD /* SingleShiftCell.swift in Sources */,
 				46EA1A57231A4353002CAACD /* OfferRequests.swift in Sources */,
 				46EA1A5B231A438B002CAACD /* GetOfferTask.swift in Sources */,
 				46EA1A42231A3EA8002CAACD /* Environment.swift in Sources */,

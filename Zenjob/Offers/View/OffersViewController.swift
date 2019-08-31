@@ -61,7 +61,8 @@ class OffersViewController: UICollectionViewController {
     collectionView.backgroundColor = .white
     collectionView.showsVerticalScrollIndicator = false
     collectionView.refreshControl = refreshControl
-
+    collectionView.register(SingleShiftCell.self, forCellWithReuseIdentifier: "singleCell")
+    collectionView.register(MultipleShiftsCell.self, forCellWithReuseIdentifier: "multipleCell")
   }
 
   func setupBindings() {

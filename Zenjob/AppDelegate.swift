@@ -13,9 +13,50 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
 
+  var environment: Environment
+  var dispatcher: NetworkDispatcher
+
+  override init() {
+    environment = Environment("staging", host: "https://staging-main.zenjob.org/api/employee/v1")
+    dispatcher = NetworkDispatcher(environment: environment)
+  }
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
+
+    let loginTask = LoginTask(username: "mobile@zenjob.com", password: "becreative")
+    loginTask.execute(in: dispatcher) { [weak self] (user, error) in
+      if let error = error {
+        print("error in LoginTast \(error.localizedDescription)")
+      }
+
+      if let user = user {
+        DispatchQueue.main.async {
+          UserDefaults.standard.set(user.accessToken, forKey: "accessToken")
+          // Initialize the window
+          self?.window = UIWindow(frame: UIScreen.main.bounds)
+
+          // Set Background Color of window
+          self?.window?.backgroundColor = .darkGray
+
+          // Allocate memory for an instance of the 'OffersViewController' class
+          let offersViewController = OffersViewController(dispatcher: self!.dispatcher, user: user)
+          let navController = UINavigationController(rootViewController: offersViewController)
+          navController.navigationBar.barTintColor = .almostWhite
+          navController.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.zenPurple]
+          navController.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.zenPurple]
+          navController.navigationBar.tintColor = .zenPurple
+          navController.navigationBar.prefersLargeTitles = true
+
+          // Set the root view controller of the app's window
+          self?.window!.rootViewController = navController
+
+          // Make the window visible
+          self?.window!.makeKeyAndVisible()
+        }
+
+      }
+    }
     return true
   }
 
