@@ -29,6 +29,10 @@
 		46EA1A57231A4353002CAACD /* OfferRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A56231A4353002CAACD /* OfferRequests.swift */; };
 		46EA1A59231A4367002CAACD /* GetOffersTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A58231A4367002CAACD /* GetOffersTask.swift */; };
 		46EA1A5B231A438B002CAACD /* GetOfferTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A5A231A438B002CAACD /* GetOfferTask.swift */; };
+		46EA1A62231A5384002CAACD /* OffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A61231A5384002CAACD /* OffersViewController.swift */; };
+		46EA1A64231A5399002CAACD /* OffersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A63231A5399002CAACD /* OffersViewModel.swift */; };
+		46EA1A67231A53F5002CAACD /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A66231A53F5002CAACD /* UIColor+Extension.swift */; };
+		46EA1A69231A5410002CAACD /* CGFloat+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A68231A5410002CAACD /* CGFloat+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +81,10 @@
 		46EA1A56231A4353002CAACD /* OfferRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferRequests.swift; sourceTree = "<group>"; };
 		46EA1A58231A4367002CAACD /* GetOffersTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetOffersTask.swift; sourceTree = "<group>"; };
 		46EA1A5A231A438B002CAACD /* GetOfferTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetOfferTask.swift; sourceTree = "<group>"; };
+		46EA1A61231A5384002CAACD /* OffersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersViewController.swift; sourceTree = "<group>"; };
+		46EA1A63231A5399002CAACD /* OffersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersViewModel.swift; sourceTree = "<group>"; };
+		46EA1A66231A53F5002CAACD /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		46EA1A68231A5410002CAACD /* CGFloat+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,9 +135,11 @@
 		46EA19F8231A257D002CAACD /* Zenjob */ = {
 			isa = PBXGroup;
 			children = (
+				46EA1A5E231A5361002CAACD /* Offers */,
 				46EA1A30231A3D40002CAACD /* View */,
 				46EA1A2E231A3D34002CAACD /* Model */,
 				46EA1A2F231A3D3B002CAACD /* Network */,
+				46EA1A65231A53E7002CAACD /* Extensions */,
 				46EA19F9231A257D002CAACD /* AppDelegate.swift */,
 				46EA1A00231A257D002CAACD /* Assets.xcassets */,
 				46EA1A02231A257D002CAACD /* LaunchScreen.storyboard */,
@@ -208,6 +218,40 @@
 				46EA1A54231A4338002CAACD /* LoginTask.swift */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		46EA1A5E231A5361002CAACD /* Offers */ = {
+			isa = PBXGroup;
+			children = (
+				46EA1A60231A5377002CAACD /* View */,
+				46EA1A5F231A536F002CAACD /* ViewModel */,
+			);
+			path = Offers;
+			sourceTree = "<group>";
+		};
+		46EA1A5F231A536F002CAACD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				46EA1A63231A5399002CAACD /* OffersViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		46EA1A60231A5377002CAACD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46EA1A61231A5384002CAACD /* OffersViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		46EA1A65231A53E7002CAACD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				46EA1A66231A53F5002CAACD /* UIColor+Extension.swift */,
+				46EA1A68231A5410002CAACD /* CGFloat+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,18 +384,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46EA1A67231A53F5002CAACD /* UIColor+Extension.swift in Sources */,
 				46EA1A34231A3DA6002CAACD /* Offer.swift in Sources */,
 				46EA1A59231A4367002CAACD /* GetOffersTask.swift in Sources */,
 				46EA1A3E231A3E41002CAACD /* Request.swift in Sources */,
 				46EA1A3C231A3DE0002CAACD /* BreakType.swift in Sources */,
 				46EA1A32231A3D75002CAACD /* User.swift in Sources */,
+				46EA1A69231A5410002CAACD /* CGFloat+Extension.swift in Sources */,
 				46EA1A40231A3E91002CAACD /* Response.swift in Sources */,
 				46EA1A36231A3DB4002CAACD /* Location.swift in Sources */,
 				46EA1A55231A4338002CAACD /* LoginTask.swift in Sources */,
 				46EA19FA231A257D002CAACD /* AppDelegate.swift in Sources */,
+				46EA1A62231A5384002CAACD /* OffersViewController.swift in Sources */,
 				46EA1A44231A3EC8002CAACD /* Dispatcher.swift in Sources */,
 				46EA1A53231A4325002CAACD /* UserRequests.swift in Sources */,
 				46EA1A38231A3DC3002CAACD /* Shift.swift in Sources */,
+				46EA1A64231A5399002CAACD /* OffersViewModel.swift in Sources */,
 				46EA1A3A231A3DD2002CAACD /* PricingTable.swift in Sources */,
 				46EA1A57231A4353002CAACD /* OfferRequests.swift in Sources */,
 				46EA1A5B231A438B002CAACD /* GetOfferTask.swift in Sources */,
