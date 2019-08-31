@@ -63,7 +63,7 @@ class PriceView: UIView {
 
     NSLayoutConstraint.activate([
       titleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20),
-      titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 5),
+      titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 15),
       titleLabel.heightAnchor.constraint(equalToConstant: 34),
       titleLabel.rightAnchor.constraint(equalTo: self.rightAnchor),
 

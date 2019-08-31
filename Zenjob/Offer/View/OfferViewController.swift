@@ -170,8 +170,8 @@ class OfferViewController: UIViewController, UIScrollViewDelegate {
       scrollView.topAnchor.constraint(equalTo: self.view.topAnchor),
       scrollView.bottomAnchor.constraint(equalTo: self.view.layoutMarginsGuide.bottomAnchor),
 
-      dismissButton.rightAnchor.constraint(equalTo: scrollView.rightAnchor, constant: -30),
-      dismissButton.topAnchor.constraint(equalTo: scrollView.layoutMarginsGuide.topAnchor),
+      dismissButton.rightAnchor.constraint(equalTo: generalView.rightAnchor, constant: -30),
+      dismissButton.topAnchor.constraint(equalTo: generalView.layoutMarginsGuide.topAnchor),
       dismissButton.heightAnchor.constraint(equalToConstant: 30),
       dismissButton.widthAnchor.constraint(equalToConstant: 30),
 
