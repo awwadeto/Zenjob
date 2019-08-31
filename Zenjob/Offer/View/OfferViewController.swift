@@ -44,6 +44,12 @@ class OfferViewController: UIViewController, UIScrollViewDelegate {
     return view
   }()
 
+  var descriptionView: DescriptionView = {
+    let view = DescriptionView()
+    view.translatesAutoresizingMaskIntoConstraints = false
+    return view
+  }()
+
   private let dismissButton: UIButton = {
     let button = UIButton()
     button.translatesAutoresizingMaskIntoConstraints = false
@@ -77,6 +83,7 @@ class OfferViewController: UIViewController, UIScrollViewDelegate {
     priceView.sizeToFit()
     shiftsView.sizeToFit()
     placeView.sizeToFit()
+    descriptionView.sizeToFit()
 
   }
 
@@ -93,6 +100,7 @@ class OfferViewController: UIViewController, UIScrollViewDelegate {
     priceView.populate(pricingTables: viewModel.offer.pricingTables)
     shiftsView.populate(shifts: viewModel.offer.shifts)
     placeView.populate(location: viewModel.offer.location)
+    descriptionView.populate(offer: viewModel.offer)
 
   }
 
@@ -122,6 +130,7 @@ class OfferViewController: UIViewController, UIScrollViewDelegate {
     stackView.addArrangedSubview(priceView)
     stackView.addArrangedSubview(shiftsView)
     stackView.addArrangedSubview(placeView)
+    stackView.addArrangedSubview(descriptionView)
 
     let constraints: [NSLayoutConstraint] = [
       scrollView.leftAnchor.constraint(equalTo: self.view.leftAnchor),
@@ -148,6 +157,8 @@ class OfferViewController: UIViewController, UIScrollViewDelegate {
       shiftsView.heightAnchor.constraint(equalTo: scrollView.heightAnchor, multiplier: 1 / 3),
 
       placeView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
+
+      descriptionView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
 
     ]
 

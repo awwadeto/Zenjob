@@ -53,6 +53,7 @@
 		46EA1A95231A7386002CAACD /* ZenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A94231A7386002CAACD /* ZenButton.swift */; };
 		46EA1A97231A7396002CAACD /* ShiftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A96231A7396002CAACD /* ShiftCell.swift */; };
 		46EA1A99231A74A8002CAACD /* PlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A98231A74A8002CAACD /* PlaceView.swift */; };
+		46EA1A9B231A822E002CAACD /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A9A231A822E002CAACD /* DescriptionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +126,7 @@
 		46EA1A94231A7386002CAACD /* ZenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenButton.swift; sourceTree = "<group>"; };
 		46EA1A96231A7396002CAACD /* ShiftCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftCell.swift; sourceTree = "<group>"; };
 		46EA1A98231A74A8002CAACD /* PlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceView.swift; sourceTree = "<group>"; };
+		46EA1A9A231A822E002CAACD /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +250,7 @@
 				46EA1A8C231A666F002CAACD /* PriceDetailView.swift */,
 				46EA1A92231A736A002CAACD /* ShiftsView.swift */,
 				46EA1A98231A74A8002CAACD /* PlaceView.swift */,
+				46EA1A9A231A822E002CAACD /* DescriptionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -501,6 +504,7 @@
 				46EA1A76231A5531002CAACD /* MultipleShiftsView.swift in Sources */,
 				46EA1A53231A4325002CAACD /* UserRequests.swift in Sources */,
 				46EA1A7C231A6326002CAACD /* UIView+Extension.swift in Sources */,
+				46EA1A9B231A822E002CAACD /* DescriptionView.swift in Sources */,
 				46EA1A38231A3DC3002CAACD /* Shift.swift in Sources */,
 				46EA1A87231A6522002CAACD /* OfferViewController.swift in Sources */,
 				46EA1A95231A7386002CAACD /* ZenButton.swift in Sources */,
