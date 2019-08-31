@@ -24,6 +24,11 @@
 		46EA1A44231A3EC8002CAACD /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A43231A3EC8002CAACD /* Dispatcher.swift */; };
 		46EA1A46231A3EE0002CAACD /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A45231A3EE0002CAACD /* Operation.swift */; };
 		46EA1A48231A3F3E002CAACD /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A47231A3F3E002CAACD /* NetworkDispatcher.swift */; };
+		46EA1A53231A4325002CAACD /* UserRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A52231A4325002CAACD /* UserRequests.swift */; };
+		46EA1A55231A4338002CAACD /* LoginTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A54231A4338002CAACD /* LoginTask.swift */; };
+		46EA1A57231A4353002CAACD /* OfferRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A56231A4353002CAACD /* OfferRequests.swift */; };
+		46EA1A59231A4367002CAACD /* GetOffersTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A58231A4367002CAACD /* GetOffersTask.swift */; };
+		46EA1A5B231A438B002CAACD /* GetOfferTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A5A231A438B002CAACD /* GetOfferTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +72,11 @@
 		46EA1A43231A3EC8002CAACD /* Dispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatcher.swift; sourceTree = "<group>"; };
 		46EA1A45231A3EE0002CAACD /* Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
 		46EA1A47231A3F3E002CAACD /* NetworkDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
+		46EA1A52231A4325002CAACD /* UserRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequests.swift; sourceTree = "<group>"; };
+		46EA1A54231A4338002CAACD /* LoginTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTask.swift; sourceTree = "<group>"; };
+		46EA1A56231A4353002CAACD /* OfferRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferRequests.swift; sourceTree = "<group>"; };
+		46EA1A58231A4367002CAACD /* GetOffersTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetOffersTask.swift; sourceTree = "<group>"; };
+		46EA1A5A231A438B002CAACD /* GetOfferTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetOfferTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +172,8 @@
 		46EA1A2F231A3D3B002CAACD /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				46EA1A51231A431A002CAACD /* User */,
+				46EA1A50231A4312002CAACD /* Offer */,
 				46EA1A3D231A3E41002CAACD /* Request.swift */,
 				46EA1A3F231A3E91002CAACD /* Response.swift */,
 				46EA1A41231A3EA8002CAACD /* Environment.swift */,
@@ -177,6 +189,25 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		46EA1A50231A4312002CAACD /* Offer */ = {
+			isa = PBXGroup;
+			children = (
+				46EA1A56231A4353002CAACD /* OfferRequests.swift */,
+				46EA1A58231A4367002CAACD /* GetOffersTask.swift */,
+				46EA1A5A231A438B002CAACD /* GetOfferTask.swift */,
+			);
+			path = Offer;
+			sourceTree = "<group>";
+		};
+		46EA1A51231A431A002CAACD /* User */ = {
+			isa = PBXGroup;
+			children = (
+				46EA1A52231A4325002CAACD /* UserRequests.swift */,
+				46EA1A54231A4338002CAACD /* LoginTask.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,15 +341,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				46EA1A34231A3DA6002CAACD /* Offer.swift in Sources */,
+				46EA1A59231A4367002CAACD /* GetOffersTask.swift in Sources */,
 				46EA1A3E231A3E41002CAACD /* Request.swift in Sources */,
 				46EA1A3C231A3DE0002CAACD /* BreakType.swift in Sources */,
 				46EA1A32231A3D75002CAACD /* User.swift in Sources */,
 				46EA1A40231A3E91002CAACD /* Response.swift in Sources */,
 				46EA1A36231A3DB4002CAACD /* Location.swift in Sources */,
+				46EA1A55231A4338002CAACD /* LoginTask.swift in Sources */,
 				46EA19FA231A257D002CAACD /* AppDelegate.swift in Sources */,
 				46EA1A44231A3EC8002CAACD /* Dispatcher.swift in Sources */,
+				46EA1A53231A4325002CAACD /* UserRequests.swift in Sources */,
 				46EA1A38231A3DC3002CAACD /* Shift.swift in Sources */,
 				46EA1A3A231A3DD2002CAACD /* PricingTable.swift in Sources */,
+				46EA1A57231A4353002CAACD /* OfferRequests.swift in Sources */,
+				46EA1A5B231A438B002CAACD /* GetOfferTask.swift in Sources */,
 				46EA1A42231A3EA8002CAACD /* Environment.swift in Sources */,
 				46EA1A46231A3EE0002CAACD /* Operation.swift in Sources */,
 				46EA1A48231A3F3E002CAACD /* NetworkDispatcher.swift in Sources */,
