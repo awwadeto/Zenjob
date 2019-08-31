@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46EA19FA231A257D002CAACD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA19F9231A257D002CAACD /* AppDelegate.swift */; };
+		46EA19FC231A257D002CAACD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA19FB231A257D002CAACD /* ViewController.swift */; };
+		46EA19FF231A257D002CAACD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46EA19FD231A257D002CAACD /* Main.storyboard */; };
+		46EA1A01231A257D002CAACD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46EA1A00231A257D002CAACD /* Assets.xcassets */; };
+		46EA1A04231A257D002CAACD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46EA1A02231A257D002CAACD /* LaunchScreen.storyboard */; };
+		46EA1A0F231A257E002CAACD /* ZenjobTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A0E231A257E002CAACD /* ZenjobTests.swift */; };
+		46EA1A1A231A257E002CAACD /* ZenjobUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A19231A257E002CAACD /* ZenjobUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46EA1A0B231A257E002CAACD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46EA19EE231A257D002CAACD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46EA19F5231A257D002CAACD;
+			remoteInfo = Zenjob;
+		};
+		46EA1A16231A257E002CAACD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46EA19EE231A257D002CAACD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46EA19F5231A257D002CAACD;
+			remoteInfo = Zenjob;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		46EA19F6231A257D002CAACD /* Zenjob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zenjob.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46EA19F9231A257D002CAACD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		46EA19FB231A257D002CAACD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		46EA19FE231A257D002CAACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46EA1A00231A257D002CAACD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46EA1A03231A257D002CAACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46EA1A05231A257D002CAACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46EA1A0A231A257E002CAACD /* ZenjobTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZenjobTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46EA1A0E231A257E002CAACD /* ZenjobTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenjobTests.swift; sourceTree = "<group>"; };
+		46EA1A10231A257E002CAACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46EA1A15231A257E002CAACD /* ZenjobUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZenjobUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46EA1A19231A257E002CAACD /* ZenjobUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenjobUITests.swift; sourceTree = "<group>"; };
+		46EA1A1B231A257E002CAACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46EA19F3231A257D002CAACD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46EA1A07231A257E002CAACD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46EA1A12231A257E002CAACD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46EA19ED231A257D002CAACD = {
+			isa = PBXGroup;
+			children = (
+				46EA19F8231A257D002CAACD /* Zenjob */,
+				46EA1A0D231A257E002CAACD /* ZenjobTests */,
+				46EA1A18231A257E002CAACD /* ZenjobUITests */,
+				46EA19F7231A257D002CAACD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46EA19F7231A257D002CAACD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46EA19F6231A257D002CAACD /* Zenjob.app */,
+				46EA1A0A231A257E002CAACD /* ZenjobTests.xctest */,
+				46EA1A15231A257E002CAACD /* ZenjobUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46EA19F8231A257D002CAACD /* Zenjob */ = {
+			isa = PBXGroup;
+			children = (
+				46EA19F9231A257D002CAACD /* AppDelegate.swift */,
+				46EA19FB231A257D002CAACD /* ViewController.swift */,
+				46EA19FD231A257D002CAACD /* Main.storyboard */,
+				46EA1A00231A257D002CAACD /* Assets.xcassets */,
+				46EA1A02231A257D002CAACD /* LaunchScreen.storyboard */,
+				46EA1A05231A257D002CAACD /* Info.plist */,
+			);
+			path = Zenjob;
+			sourceTree = "<group>";
+		};
+		46EA1A0D231A257E002CAACD /* ZenjobTests */ = {
+			isa = PBXGroup;
+			children = (
+				46EA1A0E231A257E002CAACD /* ZenjobTests.swift */,
+				46EA1A10231A257E002CAACD /* Info.plist */,
+			);
+			path = ZenjobTests;
+			sourceTree = "<group>";
+		};
+		46EA1A18231A257E002CAACD /* ZenjobUITests */ = {
+			isa = PBXGroup;
+			children = (
+				46EA1A19231A257E002CAACD /* ZenjobUITests.swift */,
+				46EA1A1B231A257E002CAACD /* Info.plist */,
+			);
+			path = ZenjobUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46EA19F5231A257D002CAACD /* Zenjob */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46EA1A1E231A257E002CAACD /* Build configuration list for PBXNativeTarget "Zenjob" */;
+			buildPhases = (
+				46EA19F2231A257D002CAACD /* Sources */,
+				46EA19F3231A257D002CAACD /* Frameworks */,
+				46EA19F4231A257D002CAACD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Zenjob;
+			productName = Zenjob;
+			productReference = 46EA19F6231A257D002CAACD /* Zenjob.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46EA1A09231A257E002CAACD /* ZenjobTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46EA1A21231A257E002CAACD /* Build configuration list for PBXNativeTarget "ZenjobTests" */;
+			buildPhases = (
+				46EA1A06231A257E002CAACD /* Sources */,
+				46EA1A07231A257E002CAACD /* Frameworks */,
+				46EA1A08231A257E002CAACD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46EA1A0C231A257E002CAACD /* PBXTargetDependency */,
+			);
+			name = ZenjobTests;
+			productName = ZenjobTests;
+			productReference = 46EA1A0A231A257E002CAACD /* ZenjobTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		46EA1A14231A257E002CAACD /* ZenjobUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46EA1A24231A257E002CAACD /* Build configuration list for PBXNativeTarget "ZenjobUITests" */;
+			buildPhases = (
+				46EA1A11231A257E002CAACD /* Sources */,
+				46EA1A12231A257E002CAACD /* Frameworks */,
+				46EA1A13231A257E002CAACD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46EA1A17231A257E002CAACD /* PBXTargetDependency */,
+			);
+			name = ZenjobUITests;
+			productName = ZenjobUITests;
+			productReference = 46EA1A15231A257E002CAACD /* ZenjobUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46EA19EE231A257D002CAACD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Awwad;
+				TargetAttributes = {
+					46EA19F5231A257D002CAACD = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					46EA1A09231A257E002CAACD = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 46EA19F5231A257D002CAACD;
+					};
+					46EA1A14231A257E002CAACD = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 46EA19F5231A257D002CAACD;
+					};
+				};
+			};
+			buildConfigurationList = 46EA19F1231A257D002CAACD /* Build configuration list for PBXProject "Zenjob" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46EA19ED231A257D002CAACD;
+			productRefGroup = 46EA19F7231A257D002CAACD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46EA19F5231A257D002CAACD /* Zenjob */,
+				46EA1A09231A257E002CAACD /* ZenjobTests */,
+				46EA1A14231A257E002CAACD /* ZenjobUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46EA19F4231A257D002CAACD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46EA1A04231A257D002CAACD /* LaunchScreen.storyboard in Resources */,
+				46EA1A01231A257D002CAACD /* Assets.xcassets in Resources */,
+				46EA19FF231A257D002CAACD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46EA1A08231A257E002CAACD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46EA1A13231A257E002CAACD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46EA19F2231A257D002CAACD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46EA19FC231A257D002CAACD /* ViewController.swift in Sources */,
+				46EA19FA231A257D002CAACD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46EA1A06231A257E002CAACD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46EA1A0F231A257E002CAACD /* ZenjobTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46EA1A11231A257E002CAACD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46EA1A1A231A257E002CAACD /* ZenjobUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46EA1A0C231A257E002CAACD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46EA19F5231A257D002CAACD /* Zenjob */;
+			targetProxy = 46EA1A0B231A257E002CAACD /* PBXContainerItemProxy */;
+		};
+		46EA1A17231A257E002CAACD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46EA19F5231A257D002CAACD /* Zenjob */;
+			targetProxy = 46EA1A16231A257E002CAACD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46EA19FD231A257D002CAACD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46EA19FE231A257D002CAACD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46EA1A02231A257D002CAACD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46EA1A03231A257D002CAACD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46EA1A1C231A257E002CAACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		46EA1A1D231A257E002CAACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46EA1A1F231A257E002CAACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3MJ748633;
+				INFOPLIST_FILE = Zenjob/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.awwad.Zenjob;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46EA1A20231A257E002CAACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3MJ748633;
+				INFOPLIST_FILE = Zenjob/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.awwad.Zenjob;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		46EA1A22231A257E002CAACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3MJ748633;
+				INFOPLIST_FILE = ZenjobTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.awwad.ZenjobTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zenjob.app/Zenjob";
+			};
+			name = Debug;
+		};
+		46EA1A23231A257E002CAACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3MJ748633;
+				INFOPLIST_FILE = ZenjobTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.awwad.ZenjobTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zenjob.app/Zenjob";
+			};
+			name = Release;
+		};
+		46EA1A25231A257E002CAACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3MJ748633;
+				INFOPLIST_FILE = ZenjobUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.awwad.ZenjobUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Zenjob;
+			};
+			name = Debug;
+		};
+		46EA1A26231A257E002CAACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3MJ748633;
+				INFOPLIST_FILE = ZenjobUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.awwad.ZenjobUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Zenjob;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46EA19F1231A257D002CAACD /* Build configuration list for PBXProject "Zenjob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46EA1A1C231A257E002CAACD /* Debug */,
+				46EA1A1D231A257E002CAACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46EA1A1E231A257E002CAACD /* Build configuration list for PBXNativeTarget "Zenjob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46EA1A1F231A257E002CAACD /* Debug */,
+				46EA1A20231A257E002CAACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46EA1A21231A257E002CAACD /* Build configuration list for PBXNativeTarget "ZenjobTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46EA1A22231A257E002CAACD /* Debug */,
+				46EA1A23231A257E002CAACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46EA1A24231A257E002CAACD /* Build configuration list for PBXNativeTarget "ZenjobUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46EA1A25231A257E002CAACD /* Debug */,
+				46EA1A26231A257E002CAACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46EA19EE231A257D002CAACD /* Project object */;
+}
