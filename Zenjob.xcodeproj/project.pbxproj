@@ -12,6 +12,12 @@
 		46EA1A04231A257D002CAACD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46EA1A02231A257D002CAACD /* LaunchScreen.storyboard */; };
 		46EA1A0F231A257E002CAACD /* ZenjobTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A0E231A257E002CAACD /* ZenjobTests.swift */; };
 		46EA1A1A231A257E002CAACD /* ZenjobUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A19231A257E002CAACD /* ZenjobUITests.swift */; };
+		46EA1A32231A3D75002CAACD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A31231A3D75002CAACD /* User.swift */; };
+		46EA1A34231A3DA6002CAACD /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A33231A3DA6002CAACD /* Offer.swift */; };
+		46EA1A36231A3DB4002CAACD /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A35231A3DB4002CAACD /* Location.swift */; };
+		46EA1A38231A3DC3002CAACD /* Shift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A37231A3DC3002CAACD /* Shift.swift */; };
+		46EA1A3A231A3DD2002CAACD /* PricingTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A39231A3DD2002CAACD /* PricingTable.swift */; };
+		46EA1A3C231A3DE0002CAACD /* BreakType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A3B231A3DE0002CAACD /* BreakType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +49,12 @@
 		46EA1A15231A257E002CAACD /* ZenjobUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZenjobUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46EA1A19231A257E002CAACD /* ZenjobUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenjobUITests.swift; sourceTree = "<group>"; };
 		46EA1A1B231A257E002CAACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46EA1A31231A3D75002CAACD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		46EA1A33231A3DA6002CAACD /* Offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
+		46EA1A35231A3DB4002CAACD /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		46EA1A37231A3DC3002CAACD /* Shift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shift.swift; sourceTree = "<group>"; };
+		46EA1A39231A3DD2002CAACD /* PricingTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricingTable.swift; sourceTree = "<group>"; };
+		46EA1A3B231A3DE0002CAACD /* BreakType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +105,9 @@
 		46EA19F8231A257D002CAACD /* Zenjob */ = {
 			isa = PBXGroup;
 			children = (
+				46EA1A30231A3D40002CAACD /* View */,
+				46EA1A2E231A3D34002CAACD /* Model */,
+				46EA1A2F231A3D3B002CAACD /* Network */,
 				46EA19F9231A257D002CAACD /* AppDelegate.swift */,
 				46EA1A00231A257D002CAACD /* Assets.xcassets */,
 				46EA1A02231A257D002CAACD /* LaunchScreen.storyboard */,
@@ -117,6 +132,33 @@
 				46EA1A1B231A257E002CAACD /* Info.plist */,
 			);
 			path = ZenjobUITests;
+			sourceTree = "<group>";
+		};
+		46EA1A2E231A3D34002CAACD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				46EA1A31231A3D75002CAACD /* User.swift */,
+				46EA1A33231A3DA6002CAACD /* Offer.swift */,
+				46EA1A35231A3DB4002CAACD /* Location.swift */,
+				46EA1A37231A3DC3002CAACD /* Shift.swift */,
+				46EA1A39231A3DD2002CAACD /* PricingTable.swift */,
+				46EA1A3B231A3DE0002CAACD /* BreakType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		46EA1A2F231A3D3B002CAACD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		46EA1A30231A3D40002CAACD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,7 +291,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46EA1A34231A3DA6002CAACD /* Offer.swift in Sources */,
+				46EA1A3C231A3DE0002CAACD /* BreakType.swift in Sources */,
+				46EA1A32231A3D75002CAACD /* User.swift in Sources */,
+				46EA1A36231A3DB4002CAACD /* Location.swift in Sources */,
 				46EA19FA231A257D002CAACD /* AppDelegate.swift in Sources */,
+				46EA1A38231A3DC3002CAACD /* Shift.swift in Sources */,
+				46EA1A3A231A3DD2002CAACD /* PricingTable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
