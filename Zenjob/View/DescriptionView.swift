@@ -106,10 +106,10 @@ class DescriptionView: UIView {
   }
 
   func populate(offer: Offer) {
-    titleLabel.text = "Description"
-    descriptionDetails.text = offer.description ?? "No available description"
-    instructionLabel.text = "Requirements & Instructions"
-    instructionDetails.text = offer.instructions ?? "No available instructions"
+    titleLabel.text = "Description".localized
+    descriptionDetails.text = offer.description ?? "No available description".localized
+    instructionLabel.text = "Requirements & Instructions".localized
+    instructionDetails.text = offer.instructions ?? "No available instructions".localized
   }
 
 }

@@ -18,4 +18,19 @@ extension String {
     return Double(self.replacingOccurrences(of: " EUR", with: ""))
   }
 
+  /// return the localized string
+  var localized: String {
+    return NSLocalizedString(self, comment: "")
+  }
+
+  /**
+   returns the localized string
+
+   - parameter comment: Argument used for ease of translation when export localization files
+
+   */
+  func localized(withComment comment: String) -> String {
+    return NSLocalizedString(self, comment: comment)
+  }
+
 }

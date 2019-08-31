@@ -83,9 +83,9 @@ class ShiftsView: UIView, UICollectionViewDelegateFlowLayout, UICollectionViewDa
 
   func populate(shifts: [Shift]) {
     self.shifts = shifts
-    titleLabel.text = "Shifts"
-    calendarButton.setTitle("Add to calendar", for: .normal)
-    calendarButton.setTitle("Added to calendar", for: .disabled)
+    titleLabel.text = "Shifts".localized
+    calendarButton.setTitle("Add to calendar".localized, for: .normal)
+    calendarButton.setTitle("Added to calendar".localized, for: .disabled)
     self.collectionView.reloadData()
   }
 

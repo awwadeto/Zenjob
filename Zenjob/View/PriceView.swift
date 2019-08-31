@@ -97,7 +97,7 @@ class PriceView: UIView {
   }
 
   func populate(pricingTables: [PricingTable]) {
-    titleLabel.text = "General details"
+    titleLabel.text = "General details".localized
 
     var amount: Double = 0.00
 
@@ -116,7 +116,7 @@ class PriceView: UIView {
       }
     }
 
-    totalView.populate(title: "Total", amount: amount.toCurrency)
+    totalView.populate(title: "Total".localized, amount: amount.toCurrency)
 
   }
 

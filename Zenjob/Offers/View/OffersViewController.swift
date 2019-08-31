@@ -16,7 +16,7 @@ class OffersViewController: UICollectionViewController {
   private let emptyStateMessage: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
-    label.text = "No available offers. Pull to refresh"
+    label.text = "No available offers. Pull to refresh".localized
     label.textColor = .darkGray
     label.numberOfLines = 0
     label.textAlignment = .center
@@ -44,7 +44,7 @@ class OffersViewController: UICollectionViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    self.title = "Explore jobs"
+    self.title = "Explore jobs".localized
     self.view.backgroundColor = .white
     setupRefreshControl()
     setupCollectionView()
@@ -54,7 +54,7 @@ class OffersViewController: UICollectionViewController {
   func setupRefreshControl() {
     refreshControl.tintColor = .zenPurple
     refreshControl.addTarget(self, action: #selector(refreshOffers), for: .valueChanged)
-    refreshControl.attributedTitle = NSAttributedString(string: "Fetching Offers")
+    refreshControl.attributedTitle = NSAttributedString(string: "Fetching Offers".localized)
   }
 
   func setupCollectionView() {

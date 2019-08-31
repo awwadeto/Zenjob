@@ -56,8 +56,8 @@ class ApplyView: UIView {
   }
 
   func populate() {
-    applyButton.setTitle("Apply now", for: .normal)
-    notButton.setTitle("Not interested", for: .normal)
+    applyButton.setTitle("Apply now".localized, for: .normal)
+    notButton.setTitle("Not interested".localized, for: .normal)
   }
 
 }

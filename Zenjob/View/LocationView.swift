@@ -75,8 +75,8 @@ class LocationView: UIView {
 
   func populate(location: Location) {
     fitSizes()
-    districtLabel.text = location.district ?? "District"
-    cityLabel.text = location.city ?? "City"
+    districtLabel.text = location.district ?? "District".localized
+    cityLabel.text = location.city ?? "City".localized
     locationIcon.image = UIImage(named: "pin")
   }
 

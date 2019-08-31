@@ -1,0 +1,39 @@
+/* 
+  Localizable.strings
+  Zenjob
+
+  Created by Awwad on 8/31/19.
+  Copyright © 2019 Awwad. All rights reserved.
+*/
+
+// OffersViewController
+"No available offers. Pull to refresh" = "Keine verfügbaren Angebote. Zum Aktualisieren ziehen";
+"Explore jobs" = "Jobs entdecken";
+"Fetching Offers" = "Angebote abrufen";
+
+//LocationView
+"District" = "Kreis";
+"City" = "Stadt";
+
+//ShiftsView
+"Shifts" = "Verschiebungen";
+"Add to calendar" = "Zum Kalender hinzufügen";
+"Added to calendar" = "Zum Kalender hinzugefügt";
+
+//PriceView
+"General details" = "Gehalt details";
+"Total" = "Gesamt";
+
+//PlaceView
+"Place"= "Ort";
+"View on maps" = "Auf Karten anzeigen";
+
+//DescriptionView
+"Description" = "Beschreibung";
+"No available description" = "Keine Beschreibung verfügbar";
+"Requirements & Instructions" = "Hnforderung & Hinweise";
+"No available instructions" = "Keine verfügbaren Anweisungen";
+
+//ApplyView
+"Apply now" = "Jetzt bewerben";
+"Not interested" = "Nicht interessiert";

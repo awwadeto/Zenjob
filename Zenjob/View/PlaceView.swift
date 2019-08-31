@@ -99,8 +99,8 @@ class PlaceView: UIView {
   func populate(location: Location) {
     locationView.populate(location: location)
     locationLabel.text = location.locationSearchString
-    titleLabel.text = "Place"
-    mapButton.setTitle("View on maps", for: .normal)
+    titleLabel.text = "Place".localized
+    mapButton.setTitle("View on maps".localized, for: .normal)
   }
 
 }
