@@ -53,8 +53,8 @@ class SingleShiftView: UIView {
 
     NSLayoutConstraint.activate([
       timeIcon.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20),
-      timeIcon.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -20),
-      timeIcon.topAnchor.constraint(equalTo: self.topAnchor, constant: 18),
+      timeIcon.centerYAnchor.constraint(equalTo: timeLabel.centerYAnchor),
+      timeIcon.heightAnchor.constraint(equalToConstant: 15),
       timeIcon.widthAnchor.constraint(equalTo: timeIcon.heightAnchor),
 
       timeLabel.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -20),

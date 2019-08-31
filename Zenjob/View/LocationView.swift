@@ -53,8 +53,8 @@ class LocationView: UIView {
 
     NSLayoutConstraint.activate([
       locationIcon.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20),
-      locationIcon.topAnchor.constraint(equalTo: self.topAnchor, constant: 18),
-      locationIcon.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -20),
+      locationIcon.centerYAnchor.constraint(equalTo: cityLabel.centerYAnchor),
+      locationIcon.heightAnchor.constraint(equalToConstant: 20),
       locationIcon.widthAnchor.constraint(equalTo: locationIcon.heightAnchor),
 
       districtLabel.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -20),

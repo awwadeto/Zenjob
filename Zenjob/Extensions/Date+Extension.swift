@@ -24,4 +24,12 @@ extension Date {
     return formatter.string(from: self)
   }
 
+  var day: String {
+    let formatter = DateFormatter()
+    formatter.dateStyle = .short
+    formatter.dateFormat = "EE"
+    return formatter.string(from: self)
+  }
+
+
 }

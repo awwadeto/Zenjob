@@ -49,6 +49,9 @@
 		46EA1A8D231A666F002CAACD /* PriceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A8C231A666F002CAACD /* PriceDetailView.swift */; };
 		46EA1A8F231A6686002CAACD /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A8E231A6686002CAACD /* Int+Extension.swift */; };
 		46EA1A91231A6692002CAACD /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A90231A6692002CAACD /* Double+Extension.swift */; };
+		46EA1A93231A736A002CAACD /* ShiftsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A92231A736A002CAACD /* ShiftsView.swift */; };
+		46EA1A95231A7386002CAACD /* ZenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A94231A7386002CAACD /* ZenButton.swift */; };
+		46EA1A97231A7396002CAACD /* ShiftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A96231A7396002CAACD /* ShiftCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +120,9 @@
 		46EA1A8C231A666F002CAACD /* PriceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceDetailView.swift; sourceTree = "<group>"; };
 		46EA1A8E231A6686002CAACD /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 		46EA1A90231A6692002CAACD /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		46EA1A92231A736A002CAACD /* ShiftsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftsView.swift; sourceTree = "<group>"; };
+		46EA1A94231A7386002CAACD /* ZenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenButton.swift; sourceTree = "<group>"; };
+		46EA1A96231A7396002CAACD /* ShiftCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,11 +238,13 @@
 			children = (
 				46EA1A6A231A5493002CAACD /* Cell */,
 				46EA1A6F231A54D4002CAACD /* GeneralView.swift */,
+				46EA1A94231A7386002CAACD /* ZenButton.swift */,
 				46EA1A71231A54FC002CAACD /* LocationView.swift */,
 				46EA1A73231A551F002CAACD /* SingleShiftView.swift */,
 				46EA1A75231A5531002CAACD /* MultipleShiftsView.swift */,
 				46EA1A8A231A6649002CAACD /* PriceView.swift */,
 				46EA1A8C231A666F002CAACD /* PriceDetailView.swift */,
+				46EA1A92231A736A002CAACD /* ShiftsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -305,6 +313,7 @@
 			children = (
 				46EA1A6B231A54A1002CAACD /* SingleShiftCell.swift */,
 				46EA1A6D231A54B9002CAACD /* MultipleShiftsCell.swift */,
+				46EA1A96231A7396002CAACD /* ShiftCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -483,6 +492,7 @@
 				46EA1A80231A63D8002CAACD /* Date+Extension.swift in Sources */,
 				46EA1A44231A3EC8002CAACD /* Dispatcher.swift in Sources */,
 				46EA1A74231A551F002CAACD /* SingleShiftView.swift in Sources */,
+				46EA1A93231A736A002CAACD /* ShiftsView.swift in Sources */,
 				46EA1A82231A63ED002CAACD /* String+Extension.swift in Sources */,
 				46EA1A72231A54FC002CAACD /* LocationView.swift in Sources */,
 				46EA1A76231A5531002CAACD /* MultipleShiftsView.swift in Sources */,
@@ -490,6 +500,7 @@
 				46EA1A7C231A6326002CAACD /* UIView+Extension.swift in Sources */,
 				46EA1A38231A3DC3002CAACD /* Shift.swift in Sources */,
 				46EA1A87231A6522002CAACD /* OfferViewController.swift in Sources */,
+				46EA1A95231A7386002CAACD /* ZenButton.swift in Sources */,
 				46EA1A64231A5399002CAACD /* OffersViewModel.swift in Sources */,
 				46EA1A6E231A54B9002CAACD /* MultipleShiftsCell.swift in Sources */,
 				46EA1A3A231A3DD2002CAACD /* PricingTable.swift in Sources */,
@@ -502,6 +513,7 @@
 				46EA1A42231A3EA8002CAACD /* Environment.swift in Sources */,
 				46EA1A46231A3EE0002CAACD /* Operation.swift in Sources */,
 				46EA1A48231A3F3E002CAACD /* NetworkDispatcher.swift in Sources */,
+				46EA1A97231A7396002CAACD /* ShiftCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
