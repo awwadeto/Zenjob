@@ -71,6 +71,14 @@ class OffersViewController: UICollectionViewController {
         self?.collectionView.reloadData()
       }
     }
+
+    viewModel.showAlert = { [weak self] in
+      DispatchQueue.main.async {
+        if let error = self?.viewModel.error {
+          self?.showAlert(error: error)
+        }
+      }
+    }
   }
 
   @objc func refreshOffers() {

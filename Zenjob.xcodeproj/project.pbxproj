@@ -58,6 +58,7 @@
 		46EA1AA3231A8643002CAACD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46EA1AA5231A8643002CAACD /* Localizable.strings */; };
 		46EA1AAB231A89CA002CAACD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1AAA231A89CA002CAACD /* MapViewController.swift */; };
 		46EA1AAD231A89E1002CAACD /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1AAC231A89E1002CAACD /* MapViewModel.swift */; };
+		46EA1AB1231AAACA002CAACD /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1AB0231AAACA002CAACD /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +138,7 @@
 		46EA1AA6231A8647002CAACD /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		46EA1AAA231A89CA002CAACD /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		46EA1AAC231A89E1002CAACD /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		46EA1AB0231AAACA002CAACD /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -363,6 +365,7 @@
 				46EA1A66231A53F5002CAACD /* UIColor+Extension.swift */,
 				46EA1A68231A5410002CAACD /* CGFloat+Extension.swift */,
 				46EA1A7B231A6326002CAACD /* UIView+Extension.swift */,
+				46EA1AB0231AAACA002CAACD /* UIViewController+Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -565,6 +568,7 @@
 				46EA1A7C231A6326002CAACD /* UIView+Extension.swift in Sources */,
 				46EA1A9B231A822E002CAACD /* DescriptionView.swift in Sources */,
 				46EA1A38231A3DC3002CAACD /* Shift.swift in Sources */,
+				46EA1AB1231AAACA002CAACD /* UIViewController+Extension.swift in Sources */,
 				46EA1A87231A6522002CAACD /* OfferViewController.swift in Sources */,
 				46EA1A95231A7386002CAACD /* ZenButton.swift in Sources */,
 				46EA1A64231A5399002CAACD /* OffersViewModel.swift in Sources */,

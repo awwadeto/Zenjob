@@ -99,6 +99,14 @@ class OfferViewController: UIViewController, UIScrollViewDelegate {
         self?.populate()
       }
     }
+    
+    viewModel.showAlert = { [weak self] in
+      DispatchQueue.main.async {
+        if let error = self?.viewModel.error {
+          self?.showAlert(error: error)
+        }
+      }
+    }
   }
 
   func populate() {

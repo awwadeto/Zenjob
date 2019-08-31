@@ -11,9 +11,11 @@ import Foundation
 class OffersViewModel {
 
   var reloadView: (()->())?
+  var showAlert: (()->())?
   var dispatcher: NetworkDispatcher
   var user: User
   var offers: [Offer] = []
+  var error: Error?
 
   var numberOfCells: Int {
     return offers.count
@@ -30,6 +32,8 @@ class OffersViewModel {
     offersTask.execute(in: dispatcher) { (offers, error) in
 
       if let error = error {
+        self.error = error
+        self.showAlert?()
         print("offersTask error: \(error.localizedDescription)")
       }
 

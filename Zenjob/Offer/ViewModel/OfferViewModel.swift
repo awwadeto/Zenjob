@@ -11,9 +11,11 @@ import Foundation
 class OfferViewModel {
 
   var reloadView: (()->())?
+  var showAlert: (()->())?
   var dispatcher: NetworkDispatcher
   var user: User
   var offer: Offer
+  var error: Error?
 
   init(dispatcher: NetworkDispatcher, user: User, offer: Offer) {
     self.dispatcher = dispatcher
@@ -27,7 +29,9 @@ class OfferViewModel {
     offerTask.execute(in: dispatcher) { (offer, error) in
 
       if let error = error {
-        print("offersTask error: \(error.localizedDescription)")
+        self.error = error
+        self.showAlert?()
+        print("offerTask error: \(error.localizedDescription)")
       }
 
       if let offer = offer {
