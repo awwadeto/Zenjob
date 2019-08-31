@@ -142,9 +142,15 @@ class OfferViewController: UIViewController, UIScrollViewDelegate {
     self.dismiss(animated: true, completion: nil)
   }
 
+  @objc func showMap() {
+    let controller = MapViewController(location: viewModel.offer.location)
+    self.present(controller, animated: true, completion: nil)
+  }
+
   func setupButtons() {
     dismissButton.addTarget(self, action: #selector(dimissView), for: .touchUpInside)
     shiftsView.calendarButton.addTarget(self, action: #selector(addToCalendar), for: .touchUpInside)
+    placeView.mapButton.addTarget(self, action: #selector(showMap), for: .touchUpInside)
   }
 
   func setupView() {

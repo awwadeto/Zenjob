@@ -56,6 +56,8 @@
 		46EA1A9B231A822E002CAACD /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A9A231A822E002CAACD /* DescriptionView.swift */; };
 		46EA1A9D231A83B8002CAACD /* ApplyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A9C231A83B8002CAACD /* ApplyView.swift */; };
 		46EA1AA3231A8643002CAACD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46EA1AA5231A8643002CAACD /* Localizable.strings */; };
+		46EA1AAB231A89CA002CAACD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1AAA231A89CA002CAACD /* MapViewController.swift */; };
+		46EA1AAD231A89E1002CAACD /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1AAC231A89E1002CAACD /* MapViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +135,8 @@
 		46EA1AA2231A863D002CAACD /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		46EA1AA4231A8643002CAACD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		46EA1AA6231A8647002CAACD /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		46EA1AAA231A89CA002CAACD /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		46EA1AAC231A89E1002CAACD /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +189,7 @@
 			children = (
 				46EA1A5E231A5361002CAACD /* Offers */,
 				46EA1A83231A6503002CAACD /* Offer */,
+				46EA1AA7231A89B2002CAACD /* Map */,
 				46EA1A30231A3D40002CAACD /* View */,
 				46EA1A2E231A3D34002CAACD /* Model */,
 				46EA1A2F231A3D3B002CAACD /* Network */,
@@ -373,6 +378,31 @@
 			path = Foundation;
 			sourceTree = "<group>";
 		};
+		46EA1AA7231A89B2002CAACD /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				46EA1AA9231A89BF002CAACD /* View */,
+				46EA1AA8231A89BA002CAACD /* ViewModel */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		46EA1AA8231A89BA002CAACD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				46EA1AAC231A89E1002CAACD /* MapViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		46EA1AA9231A89BF002CAACD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46EA1AAA231A89CA002CAACD /* MapViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -516,8 +546,10 @@
 				46EA1A32231A3D75002CAACD /* User.swift in Sources */,
 				46EA1A69231A5410002CAACD /* CGFloat+Extension.swift in Sources */,
 				46EA1A40231A3E91002CAACD /* Response.swift in Sources */,
+				46EA1AAD231A89E1002CAACD /* MapViewModel.swift in Sources */,
 				46EA1A36231A3DB4002CAACD /* Location.swift in Sources */,
 				46EA1A55231A4338002CAACD /* LoginTask.swift in Sources */,
+				46EA1AAB231A89CA002CAACD /* MapViewController.swift in Sources */,
 				46EA19FA231A257D002CAACD /* AppDelegate.swift in Sources */,
 				46EA1A62231A5384002CAACD /* OffersViewController.swift in Sources */,
 				46EA1A9D231A83B8002CAACD /* ApplyView.swift in Sources */,
