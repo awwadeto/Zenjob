@@ -69,6 +69,7 @@ class GeneralView: UIView {
   override func layoutSublayers(of layer: CALayer) {
     super.layoutSublayers(of: layer)
     fitSizes()
+    self.applyGradient(startColor: UIColor.random.cgColor, endColor: UIColor.random.cgColor)
   }
 
   func populate(offer: Offer) {

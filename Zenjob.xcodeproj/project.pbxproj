@@ -40,6 +40,7 @@
 		46EA1A74231A551F002CAACD /* SingleShiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A73231A551F002CAACD /* SingleShiftView.swift */; };
 		46EA1A76231A5531002CAACD /* MultipleShiftsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A75231A5531002CAACD /* MultipleShiftsView.swift */; };
 		46EA1A78231A55BC002CAACD /* Offers+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A77231A55BC002CAACD /* Offers+CollectionView.swift */; };
+		46EA1A7C231A6326002CAACD /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A7B231A6326002CAACD /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		46EA1A73231A551F002CAACD /* SingleShiftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleShiftView.swift; sourceTree = "<group>"; };
 		46EA1A75231A5531002CAACD /* MultipleShiftsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleShiftsView.swift; sourceTree = "<group>"; };
 		46EA1A77231A55BC002CAACD /* Offers+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Offers+CollectionView.swift"; sourceTree = "<group>"; };
+		46EA1A7B231A6326002CAACD /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +272,7 @@
 			children = (
 				46EA1A66231A53F5002CAACD /* UIColor+Extension.swift */,
 				46EA1A68231A5410002CAACD /* CGFloat+Extension.swift */,
+				46EA1A7B231A6326002CAACD /* UIView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 				46EA1A72231A54FC002CAACD /* LocationView.swift in Sources */,
 				46EA1A76231A5531002CAACD /* MultipleShiftsView.swift in Sources */,
 				46EA1A53231A4325002CAACD /* UserRequests.swift in Sources */,
+				46EA1A7C231A6326002CAACD /* UIView+Extension.swift in Sources */,
 				46EA1A38231A3DC3002CAACD /* Shift.swift in Sources */,
 				46EA1A64231A5399002CAACD /* OffersViewModel.swift in Sources */,
 				46EA1A6E231A54B9002CAACD /* MultipleShiftsCell.swift in Sources */,

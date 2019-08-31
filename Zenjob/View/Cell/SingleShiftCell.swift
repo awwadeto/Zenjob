@@ -114,6 +114,7 @@ class SingleShiftCell: UICollectionViewCell {
 
   override func layoutSublayers(of layer: CALayer) {
     super.layoutSublayers(of: layer)
+    cardView.castShadow(radius: 8.0, opacity: 0.5, offsetWidth: 0, offsetHeight: 6)
   }
 
   override func prepareForReuse() {
