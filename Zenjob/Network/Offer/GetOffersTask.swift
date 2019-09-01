@@ -8,20 +8,32 @@
 
 import Foundation
 
+/// GetOffersTask Perform a fetch request on the server and returns an array of Offers object
 class GetOffersTask: Operation {
+
+  // MARK: - Properites
 
   var offset: String
   var token: String
+
+  var request: Request {
+    return OfferRequests.offers(offset: offset, token: token)
+  }
+
+  // MARK: - Initialization
 
   init(offset: String, token: String) {
     self.offset = offset
     self.token = token
   }
 
-  var request: Request {
-    return OfferRequests.offers(offset: offset, token: token)
-  }
 
+  /**
+   This function execute the get offers request and provide a completion handler with an array of offers as response.
+   - Parameters:
+   - dispatcher: network dispatcher to perform network requests
+   - completion: completion handler with an array of offers onSuccess and an error onError
+   */
   func execute(in dispatcher: Dispatcher, completion: @escaping ([Offer]?, Error?) -> Void) {
     do {
       try dispatcher.execute(request: self.request) { (response) in

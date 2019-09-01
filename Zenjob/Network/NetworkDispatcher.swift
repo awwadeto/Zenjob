@@ -8,6 +8,12 @@
 
 import Foundation
 
+
+/**
+ Define the type of error we expect from the network
+ - badInput: invoke for wrong data in the request parameters
+ - Data: invoke when no data returned with the response
+ */
 public enum NetworkErrors: Error {
   case badInput
   case noData
@@ -18,11 +24,23 @@ public class NetworkDispatcher: Dispatcher {
   private var environment: Environment
   private var session: URLSession
 
+  
+  /**
+   Initialize a new NetworkDispatcher
+   - Parameter environment: environment instance with name and host
+   */
   required public init(environment: Environment) {
     self.environment = environment
     self.session = URLSession(configuration: URLSessionConfiguration.default)
   }
 
+
+  /**
+   This function execute the request and provide a completion handler with the response.
+   - Parameters:
+      - request: request to execute
+      - completion: completion handler with onSuccess and onError statuses
+   */
   public func execute(request: Request, completion: @escaping (Response) -> Void) throws {
     let req = try prepareURLRequest(for: request)
     let dataTask = session.dataTask(with: req, completionHandler: { (data, urlResponse, error) in
@@ -32,6 +50,12 @@ public class NetworkDispatcher: Dispatcher {
     dataTask.resume()
   }
 
+
+  /**
+   This function execute the request and provide a completion handler with the response.
+   - Parameter request: request to execute
+   - Returns: A URLRequest generated from the request parameter
+   */
   private func prepareURLRequest(for request: Request) throws -> URLRequest {
     let url = "\(environment.host)\(request.path)"
     var urlRequest = URLRequest(url: URL(string: url)!)

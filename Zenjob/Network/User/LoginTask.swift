@@ -8,20 +8,32 @@
 
 import Foundation
 
+/// LoginTask Perform a login request on the server and returns a User object
 class LoginTask: Operation {
+
+  // MARK: - Properites
 
   var username: String
   var password: String
+
+  var request: Request {
+    return UserRequests.login(username: self.username, password: self.password)
+  }
+
+  // MARK: - Initialization
 
   init(username: String, password: String) {
     self.username = username
     self.password = password
   }
 
-  var request: Request {
-    return UserRequests.login(username: self.username, password: self.password)
-  }
 
+  /**
+   This function execute the login request and provide a completion handler with a user as response.
+   - Parameters:
+   - dispatcher: network dispatcher to perform network requests
+   - completion: completion handler with a user onSuccess and an error onError
+   */
   func execute(in dispatcher: Dispatcher, completion: @escaping (User?, Error?) -> Void) {
     do {
       try dispatcher.execute(request: self.request) { (response) in

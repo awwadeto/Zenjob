@@ -13,6 +13,12 @@ public enum Response {
   case data(_: Data)
   case error(_: Int?, _: Error?)
 
+  /**
+   Initialize a new Response .
+   - Parameters:
+      - response: response returned from HTTP request with a response, data, and error parameters
+      - request: the request that returned the response
+   */
   init(_ response: (response: HTTPURLResponse?, data: Data?, error: Error?), for request: Request) {
     guard response.response?.statusCode == 200, response.error == nil else {
       self = .error(response.response?.statusCode, response.error)
