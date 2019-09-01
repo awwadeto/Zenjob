@@ -77,10 +77,10 @@ class ShiftCell: UICollectionViewCell {
   override func layoutSubviews() {
     super.layoutSubviews()
     NSLayoutConstraint.activate([
-      cardView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20),
-      cardView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -20),
-      cardView.topAnchor.constraint(equalTo: self.topAnchor, constant: 20),
-      cardView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -20),
+      cardView.leftAnchor.constraint(equalTo: self.leftAnchor),
+      cardView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -10),
+      cardView.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),
+      cardView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10),
 
       dayLabel.leftAnchor.constraint(equalTo: cardView.leftAnchor, constant: 5),
       dayLabel.rightAnchor.constraint(equalTo: cardView.rightAnchor, constant: -5),

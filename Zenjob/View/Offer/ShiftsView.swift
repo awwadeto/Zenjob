@@ -32,8 +32,8 @@ class ShiftsView: UIView, UICollectionViewDelegateFlowLayout, UICollectionViewDa
     let flowLayout = UICollectionViewFlowLayout()
     flowLayout.scrollDirection = .horizontal
     flowLayout.minimumInteritemSpacing = 0
-    flowLayout.minimumLineSpacing = 5
-    flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+    flowLayout.minimumLineSpacing = 0
+    flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 0)
 
     let collectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
     collectionView.translatesAutoresizingMaskIntoConstraints = false
@@ -107,7 +107,7 @@ class ShiftsView: UIView, UICollectionViewDelegateFlowLayout, UICollectionViewDa
   }
 
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-    return CGSize(width: self.frame.width / 2.3, height: collectionView.frame.height - 15)
+    return CGSize(width: self.frame.width / 3, height: collectionView.frame.height - 15)
   }
 
 }
