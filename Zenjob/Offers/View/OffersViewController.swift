@@ -12,7 +12,7 @@ class OffersViewController: UICollectionViewController {
 
   // MARK: - Properites
 
-  private let refreshControl = UIRefreshControl()
+  let refreshControl = UIRefreshControl()
   var viewModel: OffersViewModel
 
   let emptyStateMessage: UILabel = {
@@ -94,23 +94,6 @@ class OffersViewController: UICollectionViewController {
         }
       }
     }
-  }
-
-  /// Fetch offers from offset '0'
-  @objc func refreshOffers() {
-    viewModel.fetchOffers(completion: { [weak self] in
-      DispatchQueue.main.async {
-        self?.refreshControl.endRefreshing()
-      }
-    })
-  }
-
-  func showEmptyState() {
-    collectionView.backgroundView = emptyStateMessage
-  }
-
-  func hideEmptyState() {
-    collectionView.backgroundView = nil
   }
 
 }

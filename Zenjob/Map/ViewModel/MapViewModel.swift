@@ -16,7 +16,6 @@ class MapViewModel {
 
   // MARK: - Initialization
 
-  
   /**
    Initialize a new MapViewModel.
    - Parameter location: Location object from an offer

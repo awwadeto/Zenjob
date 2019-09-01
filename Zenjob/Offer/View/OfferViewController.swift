@@ -67,7 +67,6 @@ class OfferViewController: UIViewController, UIScrollViewDelegate {
     return button
   }()
 
-
   // MARK: - Initialization
 
   /**

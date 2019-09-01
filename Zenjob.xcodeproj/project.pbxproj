@@ -22,6 +22,7 @@
 		461E4FB4231BE7B700DF13F6 /* OffersViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461E4FB3231BE7B700DF13F6 /* OffersViewControllerTests.swift */; };
 		461E4FB8231C0A7F00DF13F6 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461E4FB7231C0A7F00DF13F6 /* TabBarController.swift */; };
 		461E4FBF231C182200DF13F6 /* ExploreHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461E4FBE231C182200DF13F6 /* ExploreHeaderView.swift */; };
+		461E4FC9231C415A00DF13F6 /* Offers+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461E4FC8231C415A00DF13F6 /* Offers+Helper.swift */; };
 		46EA19FA231A257D002CAACD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA19F9231A257D002CAACD /* AppDelegate.swift */; };
 		46EA1A01231A257D002CAACD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46EA1A00231A257D002CAACD /* Assets.xcassets */; };
 		46EA1A04231A257D002CAACD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46EA1A02231A257D002CAACD /* LaunchScreen.storyboard */; };
@@ -108,6 +109,7 @@
 		461E4FB3231BE7B700DF13F6 /* OffersViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersViewControllerTests.swift; sourceTree = "<group>"; };
 		461E4FB7231C0A7F00DF13F6 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		461E4FBE231C182200DF13F6 /* ExploreHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreHeaderView.swift; sourceTree = "<group>"; };
+		461E4FC8231C415A00DF13F6 /* Offers+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Offers+Helper.swift"; sourceTree = "<group>"; };
 		46EA19F6231A257D002CAACD /* Zenjob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zenjob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46EA19F9231A257D002CAACD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46EA1A00231A257D002CAACD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -399,6 +401,7 @@
 			children = (
 				46EA1A61231A5384002CAACD /* OffersViewController.swift */,
 				46EA1A77231A55BC002CAACD /* Offers+CollectionView.swift */,
+				461E4FC8231C415A00DF13F6 /* Offers+Helper.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -642,6 +645,7 @@
 				46EA1A8F231A6686002CAACD /* Int+Extension.swift in Sources */,
 				46EA1A32231A3D75002CAACD /* User.swift in Sources */,
 				46EA1A69231A5410002CAACD /* CGFloat+Extension.swift in Sources */,
+				461E4FC9231C415A00DF13F6 /* Offers+Helper.swift in Sources */,
 				46EA1A40231A3E91002CAACD /* Response.swift in Sources */,
 				46EA1AAD231A89E1002CAACD /* MapViewModel.swift in Sources */,
 				46EA1A36231A3DB4002CAACD /* Location.swift in Sources */,
