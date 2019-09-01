@@ -44,5 +44,8 @@
 // GeneralView
 hourlyEarn = "%@ pro Stunde";
 
+// ExploreHeaderView
+jobsNumber = "%@ Jobs warten auf Sie";
+
 //
 "The data couldn’t be read because it is missing." = "Die Daten konnten nicht gelesen werden, da sie fehlen.";

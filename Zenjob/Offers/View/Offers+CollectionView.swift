@@ -10,6 +10,13 @@ import UIKit
 
 extension OffersViewController: UICollectionViewDelegateFlowLayout {
 
+  /// Asks your data source object to provide a supplementary view to display in the collection view.
+  override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+    let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerView", for: indexPath) as! ExploreHeaderView
+    headerView.populate(offers: viewModel.numberOfCells)
+    return headerView
+  }
+
   /// Asks your data source object for the number of items in the specified section.
   /// And shows or hide the EmptyState
   override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -52,6 +59,11 @@ extension OffersViewController: UICollectionViewDelegateFlowLayout {
       return CGSize(width: self.view.frame.width, height: 400.0)
     }
     return CGSize(width: self.view.frame.width, height: 300.0)
+  }
+
+  /// Asks the delegate for the size of the header view in the specified section.
+  func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+    return CGSize(width: self.view.frame.width, height: 180)
   }
 
 }

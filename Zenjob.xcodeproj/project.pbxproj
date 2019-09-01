@@ -21,6 +21,7 @@
 		461E4FB2231BE78800DF13F6 /* OfferViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461E4FB1231BE78800DF13F6 /* OfferViewControllerTests.swift */; };
 		461E4FB4231BE7B700DF13F6 /* OffersViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461E4FB3231BE7B700DF13F6 /* OffersViewControllerTests.swift */; };
 		461E4FB8231C0A7F00DF13F6 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461E4FB7231C0A7F00DF13F6 /* TabBarController.swift */; };
+		461E4FBF231C182200DF13F6 /* ExploreHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461E4FBE231C182200DF13F6 /* ExploreHeaderView.swift */; };
 		46EA19FA231A257D002CAACD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA19F9231A257D002CAACD /* AppDelegate.swift */; };
 		46EA1A01231A257D002CAACD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46EA1A00231A257D002CAACD /* Assets.xcassets */; };
 		46EA1A04231A257D002CAACD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46EA1A02231A257D002CAACD /* LaunchScreen.storyboard */; };
@@ -107,6 +108,7 @@
 		461E4FB1231BE78800DF13F6 /* OfferViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferViewControllerTests.swift; sourceTree = "<group>"; };
 		461E4FB3231BE7B700DF13F6 /* OffersViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersViewControllerTests.swift; sourceTree = "<group>"; };
 		461E4FB7231C0A7F00DF13F6 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		461E4FBE231C182200DF13F6 /* ExploreHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreHeaderView.swift; sourceTree = "<group>"; };
 		46EA19F6231A257D002CAACD /* Zenjob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zenjob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46EA19F9231A257D002CAACD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46EA1A00231A257D002CAACD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -338,6 +340,7 @@
 				46EA1A98231A74A8002CAACD /* PlaceView.swift */,
 				46EA1A9A231A822E002CAACD /* DescriptionView.swift */,
 				46EA1A9C231A83B8002CAACD /* ApplyView.swift */,
+				461E4FBE231C182200DF13F6 /* ExploreHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -659,6 +662,7 @@
 				46EA1A91231A6692002CAACD /* Double+Extension.swift in Sources */,
 				46EA1A6C231A54A1002CAACD /* SingleShiftCell.swift in Sources */,
 				46EA1A8B231A6649002CAACD /* PriceView.swift in Sources */,
+				461E4FBF231C182200DF13F6 /* ExploreHeaderView.swift in Sources */,
 				461E4FB8231C0A7F00DF13F6 /* TabBarController.swift in Sources */,
 				46EA1A57231A4353002CAACD /* OfferRequests.swift in Sources */,
 				46EA1A5B231A438B002CAACD /* GetOfferTask.swift in Sources */,

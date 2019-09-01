@@ -56,8 +56,7 @@ class OffersViewController: UICollectionViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    self.navigationItem.title = "Explore jobs".localized
-    self.view.backgroundColor = .white
+    self.view.backgroundColor = .almostWhite
     setupRefreshControl()
     setupCollectionView()
     setupBindings()
@@ -72,11 +71,13 @@ class OffersViewController: UICollectionViewController {
 
   /// Set up collection view
   func setupCollectionView() {
+    collectionView.contentInsetAdjustmentBehavior = .never
     collectionView.backgroundColor = .white
     collectionView.showsVerticalScrollIndicator = false
     collectionView.refreshControl = refreshControl
     collectionView.register(SingleShiftCell.self, forCellWithReuseIdentifier: "singleCell")
     collectionView.register(MultipleShiftsCell.self, forCellWithReuseIdentifier: "multipleCell")
+    collectionView.register(ExploreHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "headerView")
   }
 
   func setupBindings() {

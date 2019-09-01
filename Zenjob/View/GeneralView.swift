@@ -98,7 +98,7 @@ class GeneralView: UIView {
     fitSizes()
     titleLabel.text = offer.title
     totalEarnLabel.text = offer.earningTotal.toCurrency
-    hourlyEarnLabel.text =  String(format: NSLocalizedString("hourlyEarn", comment: ""), offer.earningHourly.toCurrency)
+    hourlyEarnLabel.text = String(format: NSLocalizedString("hourlyEarn", comment: ""), offer.earningHourly.toCurrency)
   }
 
   func transition(offer: Offer) {
