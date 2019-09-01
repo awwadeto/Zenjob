@@ -19,28 +19,36 @@ struct HTTPMessage {
       return CFHTTPMessageAppendBytes(message, bytes, data.count)
     }
 
-    //CFHTTPMessageCreateResponse(kCFAllocatorDefault, statusCode, nil, kCFHTTPVersion1_0).takeRetainedValue()
     guard didAppend else {
       preconditionFailure("Couldn't create a HTTPMessage from data. Check if your httpResponse file has proper content!")
     }
   }
 
+  /// CFHTTPMessage body
   var body: Data? {
     return CFHTTPMessageCopyBody(message)?.takeRetainedValue() as Data?
   }
 
+  /**
+   Returns value of certain Header Field.
+   - Parameter headerField: The requested field
+   - Returns: A string of header field's value
+   */
   func value(forHeaderField headerField: String) -> String? {
     return CFHTTPMessageCopyHeaderFieldValue(message, headerField as CFString)?.takeRetainedValue() as String?
   }
 
+  /// All header fields in currnt CFHTTPMessage
   var allHeaderFields: [String: String] {
     return CFHTTPMessageCopyAllHeaderFields(message)?.takeRetainedValue() as? [String: String] ?? [:]
   }
 
+  /// CFHTTPMessage httpVersion
   var httpVersion: String {
     return CFHTTPMessageCopyVersion(message).takeRetainedValue() as String
   }
 
+  /// CFHTTPMessage statusCode
   var statusCode: Int? {
     return Int(CFHTTPMessageGetResponseStatusCode(message))
   }
@@ -48,6 +56,12 @@ struct HTTPMessage {
 
 extension XCTestCase {
 
+
+  /**
+   Generates a HTTPMessage from a json file.
+   - Parameter filename: Json file name
+   - Returns: HTTPMessage with the data from the file
+   */
   func httpMessage(from filename: String) -> HTTPMessage {
 
     guard let file = Bundle(for: type(of: self)).url(forResource: filename, withExtension: nil), let data = try? Data(contentsOf: file) else {
