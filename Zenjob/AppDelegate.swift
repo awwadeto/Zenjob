@@ -39,17 +39,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
           // Set Background Color of window
           self?.window?.backgroundColor = .darkGray
 
-          // Allocate memory for an instance of the 'OffersViewController' class
-          let offersViewController = OffersViewController(dispatcher: self!.dispatcher, user: user)
-          let navController = UINavigationController(rootViewController: offersViewController)
-          navController.navigationBar.barTintColor = .almostWhite
-          navController.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.zenPurple]
-          navController.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.zenPurple]
-          navController.navigationBar.tintColor = .zenPurple
-          navController.navigationBar.prefersLargeTitles = true
+          // Allocate memory for an instance of the 'tabBarController' class
+          let tabBarController = TabBarController(dispatcher: self!.dispatcher, user: user)
 
           // Set the root view controller of the app's window
-          self?.window!.rootViewController = navController
+          self?.window!.rootViewController = tabBarController
 
           // Make the window visible
           self?.window!.makeKeyAndVisible()

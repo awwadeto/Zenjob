@@ -14,7 +14,7 @@ class OfferViewModel {
 
   var reloadView: (()->())?
   var showAlert: (()->())?
-  var dispatcher: NetworkDispatcher
+  var dispatcher: Dispatcher
   var user: User
   var offer: Offer
   var error: Error?
@@ -29,7 +29,7 @@ class OfferViewModel {
       - user: The logged in user
       - offer: The offer picked by the user
    */
-  init(dispatcher: NetworkDispatcher, user: User, offer: Offer) {
+  init(dispatcher: Dispatcher, user: User, offer: Offer) {
     self.dispatcher = dispatcher
     self.user = user
     self.offer = offer

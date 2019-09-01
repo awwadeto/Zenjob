@@ -38,6 +38,14 @@ class GeneralView: UIView {
     return label
   }()
 
+  let generalLabel: UILabel = {
+    let label = UILabel()
+    label.translatesAutoresizingMaskIntoConstraints = false
+    label.textColor = .white
+    label.font = UIFont.boldSystemFont(ofSize: 14)
+    return label
+  }()
+
   // MARK: - Initialization
 
   override init(frame: CGRect) {
@@ -47,6 +55,7 @@ class GeneralView: UIView {
     self.addSubview(titleLabel)
     self.addSubview(totalEarnLabel)
     self.addSubview(hourlyEarnLabel)
+    self.addSubview(generalLabel)
   }
 
   required init?(coder aDecoder: NSCoder) {
@@ -70,6 +79,10 @@ class GeneralView: UIView {
       titleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 15),
       titleLabel.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -15),
       titleLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -20),
+
+      generalLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 15),
+      generalLabel.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -15),
+      generalLabel.bottomAnchor.constraint(equalTo: titleLabel.topAnchor, constant: -10)
       ])
   }
 
@@ -88,6 +101,11 @@ class GeneralView: UIView {
     hourlyEarnLabel.text =  String(format: NSLocalizedString("hourlyEarn", comment: ""), offer.earningHourly.toCurrency)
   }
 
+  func transition(offer: Offer) {
+    populate(offer: offer)
+    generalLabel.text = "GENERAL".localized
+  }
+
   /// Performs any clean up necessary to prepare the view for use again.
   func prepareForReuse() {
     titleLabel.text = nil
@@ -100,6 +118,7 @@ class GeneralView: UIView {
     totalEarnLabel.sizeToFit()
     hourlyEarnLabel.sizeToFit()
     titleLabel.sizeToFit()
+    generalLabel.sizeToFit()
   }
 
 }

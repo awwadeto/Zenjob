@@ -32,10 +32,10 @@ class OffersViewController: UICollectionViewController {
   /**
    Initialize a new OffersViewController.
    - Parameters:
-   - dispatcher: Network dispatcher to perform network requests
-   - user: The logged in user
+     - dispatcher: Network dispatcher to perform network requests
+     - user: The logged in user
    */
-  init(dispatcher: NetworkDispatcher, user: User) {
+  init(dispatcher: Dispatcher, user: User) {
     viewModel = OffersViewModel(dispatcher: dispatcher, user: user)
     viewModel.fetchOffers(completion: {})
 
@@ -56,7 +56,7 @@ class OffersViewController: UICollectionViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    self.title = "Explore jobs".localized
+    self.navigationItem.title = "Explore jobs".localized
     self.view.backgroundColor = .white
     setupRefreshControl()
     setupCollectionView()

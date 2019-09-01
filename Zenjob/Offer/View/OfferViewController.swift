@@ -77,7 +77,7 @@ class OfferViewController: UIViewController, UIScrollViewDelegate {
        - user: The logged in user
        - offer: The offer picked by the user
    */
-  init(dispatcher: NetworkDispatcher, user: User, offer: Offer) {
+  init(dispatcher: Dispatcher, user: User, offer: Offer) {
     viewModel = OfferViewModel(dispatcher: dispatcher, user: user, offer: offer)
     viewModel.fetchOffer(completion: {})
     super.init(nibName: nil, bundle: nil)
@@ -129,7 +129,7 @@ class OfferViewController: UIViewController, UIScrollViewDelegate {
 
   /// Populates the view's properties
   func populate() {
-    generalView.populate(offer: viewModel.offer)
+    generalView.transition(offer: viewModel.offer)
     priceView.populate(pricingTables: viewModel.offer.pricingTables)
     shiftsView.populate(shifts: viewModel.offer.shifts)
     placeView.populate(location: viewModel.offer.location)

@@ -14,7 +14,7 @@ class OffersViewModel {
 
   var reloadView: (()->())?
   var showAlert: (()->())?
-  var dispatcher: NetworkDispatcher
+  var dispatcher: Dispatcher
   var user: User
   var offers: [Offer] = []
   var error: Error?
@@ -32,7 +32,7 @@ class OffersViewModel {
      - dispatcher: Network dispatcher to perform network requests
      - user: The logged in user
    */
-  init(dispatcher: NetworkDispatcher, user: User) {
+  init(dispatcher: Dispatcher, user: User) {
     self.dispatcher = dispatcher
     self.user = user
     self.offersTask = GetOffersTask(offset: "0", token: user.accessToken)
