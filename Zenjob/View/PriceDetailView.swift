@@ -10,7 +10,9 @@ import UIKit
 
 class PriceDetailView: UIView {
 
-  private let typeLabel: UILabel = {
+  // MARK: - Properites
+
+  let typeLabel: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
     label.textColor = .darkG
@@ -18,7 +20,7 @@ class PriceDetailView: UIView {
     return label
   }()
 
-  private let hourlyLabel: UILabel = {
+  let hourlyLabel: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
     label.textColor = .lightG
@@ -27,7 +29,7 @@ class PriceDetailView: UIView {
     return label
   }()
 
-  private let amountLabel: UILabel = {
+  let amountLabel: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
     label.textColor = .lightG
@@ -35,6 +37,8 @@ class PriceDetailView: UIView {
     label.textAlignment = .right
     return label
   }()
+
+  // MARK: - Initialization
 
   override init(frame: CGRect) {
     super.init(frame: frame)
@@ -48,9 +52,11 @@ class PriceDetailView: UIView {
     fatalError("init(coder:) has not been implemented")
   }
 
+  // MARK: - Methods
+
+  /// Lays out subviews.
   override func layoutSubviews() {
     super.layoutSubviews()
-
     NSLayoutConstraint.activate([
       typeLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20),
       typeLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),
@@ -66,11 +72,13 @@ class PriceDetailView: UIView {
       ])
   }
 
+  /// Tells the delegate a layer's bounds have changed.
   override func layoutSublayers(of layer: CALayer) {
     super.layoutSublayers(of: layer)
     fitSizes()
   }
 
+  /// Populates the view's properties with a pricingTable
   func populate(pricingTable: PricingTable) {
     fitSizes()
 
@@ -85,18 +93,22 @@ class PriceDetailView: UIView {
     }
   }
 
+  /// Populates the view's properties with a title and amount
+  /// Used for the Total field
   func populate(title: String, amount: String) {
     fitSizes()
     typeLabel.text = title
     amountLabel.text = amount
   }
 
+  /// Resizes and moves the receiver views so it just encloses its subviews.
   private func fitSizes() {
     typeLabel.sizeToFit()
     amountLabel.sizeToFit()
     hourlyLabel.sizeToFit()
   }
 
+  /// Performs any clean up necessary to prepare the view for use again.
   func prepareForReuse() {
     typeLabel.text = nil
     amountLabel.text = nil

@@ -10,6 +10,8 @@ import UIKit
 
 class MultipleShiftsCell: UICollectionViewCell {
 
+  // MARK: - Properites
+
   private let cardView: UIView = {
     let view = UIView()
     view.translatesAutoresizingMaskIntoConstraints = false
@@ -18,7 +20,7 @@ class MultipleShiftsCell: UICollectionViewCell {
     return view
   }()
 
-  private let generalView: GeneralView = {
+  let generalView: GeneralView = {
     let view = GeneralView()
     view.translatesAutoresizingMaskIntoConstraints = false
     view.layer.cornerRadius = 12
@@ -26,19 +28,19 @@ class MultipleShiftsCell: UICollectionViewCell {
     return view
   }()
 
-  private let locationView: LocationView = {
+  let locationView: LocationView = {
     let view = LocationView()
     view.translatesAutoresizingMaskIntoConstraints = false
     return view
   }()
 
-  private let shiftsView: MultipleShiftsView = {
+  let shiftsView: MultipleShiftsView = {
     let view = MultipleShiftsView()
     view.translatesAutoresizingMaskIntoConstraints = false
     return view
   }()
 
-  private let detailView: UIView = {
+  let detailView: UIView = {
     let view = UIView()
     view.translatesAutoresizingMaskIntoConstraints = false
     view.layer.cornerRadius = 12
@@ -53,6 +55,8 @@ class MultipleShiftsCell: UICollectionViewCell {
     view.backgroundColor = .lineG
     return view
   }()
+
+  // MARK: - Initialization
 
   required init?(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
@@ -70,9 +74,11 @@ class MultipleShiftsCell: UICollectionViewCell {
 
   }
 
+  // MARK: - Methods
+
+  /// Lays out subviews.
   override func layoutSubviews() {
     super.layoutSubviews()
-
     NSLayoutConstraint.activate([
       cardView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20),
       cardView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -20),
@@ -106,17 +112,20 @@ class MultipleShiftsCell: UICollectionViewCell {
       ])
   }
 
+  /// Populates the view's properties with an offer
   func populate(offer: Offer) {
     generalView.populate(offer: offer)
     locationView.populate(location: offer.location)
     shiftsView.populate(shifts: offer.shifts)
   }
 
+  /// Tells the delegate a layer's bounds have changed.
   override func layoutSublayers(of layer: CALayer) {
     super.layoutSublayers(of: layer)
     cardView.castShadow(radius: 8.0, opacity: 0.5, offsetWidth: 0, offsetHeight: 6)
   }
 
+  /// Performs any clean up necessary to prepare the view for use again.
   override func prepareForReuse() {
     super.prepareForReuse()
     generalView.prepareForReuse()

@@ -10,6 +10,8 @@ import UIKit
 
 class ShiftCell: UICollectionViewCell {
 
+  // MARK: - Properites
+
   private let cardView: UIView = {
     let view = UIView()
     view.translatesAutoresizingMaskIntoConstraints = false
@@ -20,7 +22,7 @@ class ShiftCell: UICollectionViewCell {
     return view
   }()
 
-  private let dayLabel: UILabel = {
+  let dayLabel: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
     label.textColor = .red
@@ -31,7 +33,7 @@ class ShiftCell: UICollectionViewCell {
     return label
   }()
 
-  private let dateLabel: UILabel = {
+  let dateLabel: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
     label.textColor = .darkG
@@ -42,7 +44,7 @@ class ShiftCell: UICollectionViewCell {
     return label
   }()
 
-  private let timeLabel: UILabel = {
+  let timeLabel: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
     label.textColor = .lightG
@@ -53,6 +55,7 @@ class ShiftCell: UICollectionViewCell {
     return label
   }()
 
+  // MARK: - Initialization
 
   required init?(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
@@ -68,9 +71,11 @@ class ShiftCell: UICollectionViewCell {
 
   }
 
+  // MARK: - Methods
+
+  /// Lays out subviews.
   override func layoutSubviews() {
     super.layoutSubviews()
-
     NSLayoutConstraint.activate([
       cardView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20),
       cardView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -20),
@@ -94,16 +99,19 @@ class ShiftCell: UICollectionViewCell {
       ])
   }
 
+  /// Populates the view's properties with a shift
   func populate(shift: Shift) {
     dayLabel.text = shift.beginDate.day
     dateLabel.text = shift.beginDate.toString(format: "dd.MM")
     timeLabel.text = "\(shift.beginDate.timeIn24HourFormat()) - \(shift.endDate.timeIn24HourFormat())"
   }
 
+  /// Tells the delegate a layer's bounds have changed.
   override func layoutSublayers(of layer: CALayer) {
     super.layoutSublayers(of: layer)
   }
 
+  /// Performs any clean up necessary to prepare the view for use again.
   override func prepareForReuse() {
     super.prepareForReuse()
     dayLabel.text = nil

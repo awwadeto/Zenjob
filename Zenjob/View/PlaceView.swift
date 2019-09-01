@@ -10,7 +10,9 @@ import UIKit
 
 class PlaceView: UIView {
 
-  private let titleLabel: UILabel = {
+  // MARK: - Properites
+
+  let titleLabel: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
     label.textColor = .darkG
@@ -24,13 +26,13 @@ class PlaceView: UIView {
     return button
   }()
 
-  private let locationView: LocationView = {
+  let locationView: LocationView = {
     let view = LocationView()
     view.translatesAutoresizingMaskIntoConstraints = false
     return view
   }()
 
-  private let locationLabel: UILabel = {
+  let locationLabel: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
     label.textColor = .lightG
@@ -46,6 +48,8 @@ class PlaceView: UIView {
     return view
   }()
 
+  // MARK: - Initialization
+
   override init(frame: CGRect) {
     super.init(frame: frame)
 
@@ -60,9 +64,11 @@ class PlaceView: UIView {
     fatalError("init(coder:) has not been implemented")
   }
 
+  // MARK: - Methods
+
+  /// Lays out subviews.
   override func layoutSubviews() {
     super.layoutSubviews()
-
     NSLayoutConstraint.activate([
       titleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20),
       titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 15),
@@ -91,11 +97,13 @@ class PlaceView: UIView {
       ])
   }
 
+  /// Tells the delegate a layer's bounds have changed.
   override func layoutSublayers(of layer: CALayer) {
     super.layoutSublayers(of: layer)
     locationLabel.sizeToFit()
   }
 
+  /// Populates the view's properties with a location
   func populate(location: Location) {
     locationView.populate(location: location)
     locationLabel.text = location.locationSearchString

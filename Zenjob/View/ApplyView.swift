@@ -10,6 +10,8 @@ import UIKit
 
 class ApplyView: UIView {
 
+  // MARK: - Properites
+
   var applyButton: ZenButton = {
     let button = ZenButton(type: .full, cornerRadius: 30)
     button.translatesAutoresizingMaskIntoConstraints = false
@@ -22,6 +24,8 @@ class ApplyView: UIView {
     return button
   }()
 
+  // MARK: - Initialization
+
   override init(frame: CGRect) {
     super.init(frame: frame)
 
@@ -33,9 +37,11 @@ class ApplyView: UIView {
     fatalError("init(coder:) has not been implemented")
   }
 
+  // MARK: - Methods
+
+  /// Lays out subviews.
   override func layoutSubviews() {
     super.layoutSubviews()
-
     NSLayoutConstraint.activate([
       applyButton.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20),
       applyButton.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -20),
@@ -50,6 +56,7 @@ class ApplyView: UIView {
       ])
   }
 
+  /// Tells the delegate a layer's bounds have changed.
   override func layoutSublayers(of layer: CALayer) {
     super.layoutSublayers(of: layer)
     applyButton.castShadow(radius: 9.0, opacity: 0.3, offsetWidth: 0, offsetHeight: 0)

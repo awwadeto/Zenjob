@@ -14,7 +14,7 @@ public enum Response {
   case error(_: Int?, _: Error?)
 
   /**
-   Initialize a new Response .
+   Initialize a new Response.
    - Parameters:
       - response: response returned from HTTP request with a response, data, and error parameters
       - request: the request that returned the response

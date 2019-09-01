@@ -10,7 +10,9 @@ import UIKit
 
 class MultipleShiftsView: UIView {
 
-  private let startDateLabel: UILabel = {
+  // MARK: - Properites
+
+  let startDateLabel: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
     label.textColor = .darkG
@@ -18,7 +20,7 @@ class MultipleShiftsView: UIView {
     return label
   }()
 
-  private let startTimeLabel: UILabel = {
+  let startTimeLabel: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
     label.textColor = .lightG
@@ -27,14 +29,14 @@ class MultipleShiftsView: UIView {
     return label
   }()
 
-  private let startTimeIcon: UIImageView = {
+  let startTimeIcon: UIImageView = {
     let imageView = UIImageView()
     imageView.translatesAutoresizingMaskIntoConstraints = false
     imageView.contentMode = .scaleAspectFit
     return imageView
   }()
 
-  private let endDateLabel: UILabel = {
+  let endDateLabel: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
     label.textColor = .darkG
@@ -42,7 +44,7 @@ class MultipleShiftsView: UIView {
     return label
   }()
 
-  private let endTimeLabel: UILabel = {
+  let endTimeLabel: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
     label.textColor = .lightG
@@ -51,14 +53,14 @@ class MultipleShiftsView: UIView {
     return label
   }()
 
-  private let endTimeIcon: UIImageView = {
+  let endTimeIcon: UIImageView = {
     let imageView = UIImageView()
     imageView.translatesAutoresizingMaskIntoConstraints = false
     imageView.contentMode = .scaleAspectFit
     return imageView
   }()
 
-  private let shiftsLabel: UILabel = {
+  let shiftsLabel: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
     label.textColor = .lightG
@@ -73,6 +75,8 @@ class MultipleShiftsView: UIView {
     view.backgroundColor = .zenPurple
     return view
   }()
+
+  // MARK: - Initialization
 
   override init(frame: CGRect) {
     super.init(frame: frame)
@@ -93,9 +97,11 @@ class MultipleShiftsView: UIView {
     fatalError("init(coder:) has not been implemented")
   }
 
+  // MARK: - Methods
+
+  /// Lays out subviews.
   override func layoutSubviews() {
     super.layoutSubviews()
-
     NSLayoutConstraint.activate([
       startTimeIcon.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20),
       startTimeIcon.centerYAnchor.constraint(equalTo: startTimeLabel.centerYAnchor),
@@ -136,13 +142,13 @@ class MultipleShiftsView: UIView {
       ])
   }
 
+  /// Tells the delegate a layer's bounds have changed.
   override func layoutSublayers(of layer: CALayer) {
     super.layoutSublayers(of: layer)
-    fitSizes()
   }
 
+  /// Populates the view's properties with an array of shifts
   func populate(shifts: [Shift]) {
-    fitSizes()
     startDateLabel.text = shifts.first?.beginDate.toString()
     endDateLabel.text = shifts.first?.beginDate.toString()
 
@@ -160,9 +166,7 @@ class MultipleShiftsView: UIView {
     shiftsLabel.text = shifts.count - 2 <= 0 ? "" : "+\(shifts.count - 2) Shifts"
   }
 
-  private func fitSizes() {
-  }
-
+  /// Performs any clean up necessary to prepare the view for use again.
   func prepareForReuse() {
     startDateLabel.text = nil
     startTimeLabel.text = nil

@@ -8,12 +8,21 @@
 
 import UIKit
 
+
+/**
+ Define the style of the ZenButton
+ - full: colored background and without borders
+ - empty: empty background and with borders
+ */
 enum CustomButtonType {
   case full
   case empty
 }
 
+/// Custom implementation of UIButton with different button styles
 class ZenButton: UIButton {
+
+  // MARK: - Properites
 
   var type: CustomButtonType
 
@@ -32,6 +41,15 @@ class ZenButton: UIButton {
     }
   }
 
+  // MARK: - Initialization
+
+
+  /**
+   Initialize a new ZenButton with custom style.
+   - Parameters:
+       - type: the style type of the button
+       - cornerRadius: the radius of the button corners
+   */
   init(type: CustomButtonType, cornerRadius: CGFloat) {
     self.type = type
     super.init(frame: .zero)
@@ -42,6 +60,10 @@ class ZenButton: UIButton {
     fatalError("init(coder:) has not been implemented")
   }
 
+  // MARK: - Methods
+
+  /// Applying button styles
+  /// - Parameter cornerRadius: the radius of the button corners
   func applyStyle(cornerRadius: CGFloat) {
     self.layer.cornerRadius = cornerRadius
     self.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)

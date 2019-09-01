@@ -10,7 +10,9 @@ import UIKit
 
 class LocationView: UIView {
 
-  private let cityLabel: UILabel = {
+  // MARK: - Properites
+
+  let cityLabel: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
     label.textColor = .darkG
@@ -18,7 +20,7 @@ class LocationView: UIView {
     return label
   }()
 
-  private let districtLabel: UILabel = {
+  let districtLabel: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
     label.textColor = .lightG
@@ -27,12 +29,14 @@ class LocationView: UIView {
     return label
   }()
 
-  private let locationIcon: UIImageView = {
+  let locationIcon: UIImageView = {
     let imageView = UIImageView()
     imageView.translatesAutoresizingMaskIntoConstraints = false
     imageView.contentMode = .scaleAspectFit
     return imageView
   }()
+
+  // MARK: - Initialization
 
   override init(frame: CGRect) {
     super.init(frame: frame)
@@ -48,9 +52,11 @@ class LocationView: UIView {
     fatalError("init(coder:) has not been implemented")
   }
 
+  // MARK: - Methods
+
+  /// Lays out subviews.
   override func layoutSubviews() {
     super.layoutSubviews()
-
     NSLayoutConstraint.activate([
       locationIcon.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20),
       locationIcon.centerYAnchor.constraint(equalTo: cityLabel.centerYAnchor),
@@ -68,11 +74,13 @@ class LocationView: UIView {
       ])
   }
 
+  /// Tells the delegate a layer's bounds have changed.
   override func layoutSublayers(of layer: CALayer) {
     super.layoutSublayers(of: layer)
     fitSizes()
   }
 
+  /// Populates the view's properties with a location
   func populate(location: Location) {
     fitSizes()
     districtLabel.text = location.district ?? "District".localized
@@ -80,11 +88,13 @@ class LocationView: UIView {
     locationIcon.image = UIImage(named: "pin")
   }
 
+  /// Resizes and moves the receiver views so it just encloses its subviews.
   private func fitSizes() {
     districtLabel.sizeToFit()
     cityLabel.sizeToFit()
   }
 
+  /// Performs any clean up necessary to prepare the view for use again.
   func prepareForReuse() {
     districtLabel.text = nil
     cityLabel.text = nil

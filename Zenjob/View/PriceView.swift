@@ -10,7 +10,9 @@ import UIKit
 
 class PriceView: UIView {
 
-  private let titleLabel: UILabel = {
+  // MARK: - Properites
+
+  let titleLabel: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
     label.textColor = .darkG
@@ -18,19 +20,19 @@ class PriceView: UIView {
     return label
   }()
 
-  private let summaryView: PriceDetailView = {
+  let summaryView: PriceDetailView = {
     let view = PriceDetailView()
     view.translatesAutoresizingMaskIntoConstraints = false
     return view
   }()
 
-  private let pauseView: PriceDetailView = {
+  let pauseView: PriceDetailView = {
     let view = PriceDetailView()
     view.translatesAutoresizingMaskIntoConstraints = false
     return view
   }()
 
-  private let totalView: PriceDetailView = {
+  let totalView: PriceDetailView = {
     let view = PriceDetailView()
     view.translatesAutoresizingMaskIntoConstraints = false
     return view
@@ -42,6 +44,8 @@ class PriceView: UIView {
     view.backgroundColor = .lineG
     return view
   }()
+
+  // MARK: - Initialization
 
   override init(frame: CGRect) {
     super.init(frame: frame)
@@ -58,9 +62,11 @@ class PriceView: UIView {
     fatalError("init(coder:) has not been implemented")
   }
 
+  // MARK: - Methods
+
+  /// Lays out subviews.
   override func layoutSubviews() {
     super.layoutSubviews()
-
     NSLayoutConstraint.activate([
       titleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20),
       titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 15),
@@ -89,6 +95,7 @@ class PriceView: UIView {
       ])
   }
 
+  /// Tells the delegate a layer's bounds have changed.
   override func layoutSublayers(of layer: CALayer) {
     super.layoutSublayers(of: layer)
     summaryView.sizeToFit()
@@ -96,13 +103,12 @@ class PriceView: UIView {
     totalView.sizeToFit()
   }
 
+  /// Populates the view's properties with an array of pricingTables
   func populate(pricingTables: [PricingTable]) {
+    var amount: Double = 0.00
     titleLabel.text = "General details".localized
 
-    var amount: Double = 0.00
-
     for pricingTable in pricingTables {
-
       if let earningTotal = pricingTable.earningTotal.doubleValue {
         amount += earningTotal
       }
@@ -117,7 +123,6 @@ class PriceView: UIView {
     }
 
     totalView.populate(title: "Total".localized, amount: amount.toCurrency)
-
   }
 
 }

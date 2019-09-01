@@ -10,9 +10,11 @@ import UIKit
 
 class ShiftsView: UIView, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
 
+  // MARK: - Properites
+
   var shifts: [Shift] = []
 
-  private let titleLabel: UILabel = {
+  let titleLabel: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
     label.textColor = .darkG
@@ -26,7 +28,7 @@ class ShiftsView: UIView, UICollectionViewDelegateFlowLayout, UICollectionViewDa
     return button
   }()
 
-  private let collectionView: UICollectionView = {
+  let collectionView: UICollectionView = {
     let flowLayout = UICollectionViewFlowLayout()
     flowLayout.scrollDirection = .horizontal
     flowLayout.minimumInteritemSpacing = 0
@@ -39,6 +41,8 @@ class ShiftsView: UIView, UICollectionViewDelegateFlowLayout, UICollectionViewDa
     collectionView.register(ShiftCell.self, forCellWithReuseIdentifier: "shiftCell")
     return collectionView
   }()
+
+  // MARK: - Initialization
 
   override init(frame: CGRect) {
     super.init(frame: frame)
@@ -54,9 +58,11 @@ class ShiftsView: UIView, UICollectionViewDelegateFlowLayout, UICollectionViewDa
     fatalError("init(coder:) has not been implemented")
   }
 
+  // MARK: - Methods
+
+  /// Lays out subviews.
   override func layoutSubviews() {
     super.layoutSubviews()
-
     NSLayoutConstraint.activate([
       titleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20),
       titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 15),
@@ -72,15 +78,16 @@ class ShiftsView: UIView, UICollectionViewDelegateFlowLayout, UICollectionViewDa
       collectionView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -15),
       collectionView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor),
       collectionView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -15),
-
       ])
   }
 
+  /// Tells the delegate a layer's bounds have changed.
   override func layoutSublayers(of layer: CALayer) {
     super.layoutSublayers(of: layer)
     collectionView.sizeToFit()
   }
 
+  /// Populates the view's properties with an array of shifts
   func populate(shifts: [Shift]) {
     self.shifts = shifts
     titleLabel.text = "Shifts".localized

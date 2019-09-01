@@ -10,7 +10,9 @@ import UIKit
 
 class SingleShiftView: UIView {
 
-  private let dateLabel: UILabel = {
+  // MARK: - Properites
+
+  let dateLabel: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
     label.textColor = .darkG
@@ -18,7 +20,7 @@ class SingleShiftView: UIView {
     return label
   }()
 
-  private let timeLabel: UILabel = {
+  let timeLabel: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
     label.textColor = .lightG
@@ -27,12 +29,14 @@ class SingleShiftView: UIView {
     return label
   }()
 
-  private let timeIcon: UIImageView = {
+  let timeIcon: UIImageView = {
     let imageView = UIImageView()
     imageView.translatesAutoresizingMaskIntoConstraints = false
     imageView.contentMode = .scaleAspectFit
     return imageView
   }()
+
+  // MARK: - Initialization
 
   override init(frame: CGRect) {
     super.init(frame: frame)
@@ -48,9 +52,11 @@ class SingleShiftView: UIView {
     fatalError("init(coder:) has not been implemented")
   }
 
+  // MARK: - Methods
+
+  /// Lays out subviews.
   override func layoutSubviews() {
     super.layoutSubviews()
-
     NSLayoutConstraint.activate([
       timeIcon.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20),
       timeIcon.centerYAnchor.constraint(equalTo: timeLabel.centerYAnchor),
@@ -68,11 +74,13 @@ class SingleShiftView: UIView {
       ])
   }
 
+  /// Tells the delegate a layer's bounds have changed.
   override func layoutSublayers(of layer: CALayer) {
     super.layoutSublayers(of: layer)
     fitSizes()
   }
 
+  /// Populates the view's properties with an array of shifts
   func populate(shifts: [Shift]) {
     fitSizes()
     dateLabel.text = shifts.first?.beginDate.toString()
@@ -84,11 +92,13 @@ class SingleShiftView: UIView {
     timeIcon.image = UIImage(named: "clock")
   }
 
+  /// Resizes and moves the receiver views so it just encloses its subviews.
   private func fitSizes() {
     dateLabel.sizeToFit()
     timeLabel.sizeToFit()
   }
 
+  /// Performs any clean up necessary to prepare the view for use again.
   func prepareForReuse() {
     dateLabel.text = nil
     timeLabel.text = nil

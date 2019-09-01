@@ -10,7 +10,9 @@ import UIKit
 
 class DescriptionView: UIView {
 
-  private let titleLabel: UILabel = {
+  // MARK: - Properites
+
+  let titleLabel: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
     label.textColor = .darkG
@@ -18,7 +20,7 @@ class DescriptionView: UIView {
     return label
   }()
 
-  private let descriptionDetails: UILabel = {
+  let descriptionDetails: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
     label.textColor = .lightG
@@ -27,7 +29,7 @@ class DescriptionView: UIView {
     return label
   }()
 
-  private let instructionLabel: UILabel = {
+  let instructionLabel: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
     label.textColor = .darkG
@@ -35,7 +37,7 @@ class DescriptionView: UIView {
     return label
   }()
 
-  private let instructionDetails: UILabel = {
+  let instructionDetails: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
     label.textColor = .lightG
@@ -45,13 +47,15 @@ class DescriptionView: UIView {
     return label
   }()
 
-  private var instructionView: UIView = {
+  private let instructionView: UIView = {
     let view = UIView()
     view.translatesAutoresizingMaskIntoConstraints = false
     view.layer.cornerRadius = 12
     view.backgroundColor = .white
     return view
   }()
+
+  // MARK: - Initialization
 
   override init(frame: CGRect) {
     super.init(frame: frame)
@@ -67,9 +71,11 @@ class DescriptionView: UIView {
     fatalError("init(coder:) has not been implemented")
   }
 
+  // MARK: - Methods
+
+  /// Lays out subviews.
   override func layoutSubviews() {
     super.layoutSubviews()
-
     NSLayoutConstraint.activate([
       titleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20),
       titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 15),
@@ -97,6 +103,7 @@ class DescriptionView: UIView {
       ])
   }
 
+  /// Tells the delegate a layer's bounds have changed.
   override func layoutSublayers(of layer: CALayer) {
     super.layoutSublayers(of: layer)
     instructionView.sizeToFit()
@@ -105,6 +112,7 @@ class DescriptionView: UIView {
     instructionView.castShadow(radius: 10.0, opacity: 0.3, offsetWidth: 0, offsetHeight: 0)
   }
 
+  /// Populates the view's properties with an offer
   func populate(offer: Offer) {
     titleLabel.text = "Description".localized
     descriptionDetails.text = offer.description ?? "No available description".localized

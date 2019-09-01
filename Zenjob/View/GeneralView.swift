@@ -10,7 +10,9 @@ import UIKit
 
 class GeneralView: UIView {
 
-  private let titleLabel: UILabel = {
+  // MARK: - Properites
+
+  let titleLabel: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
     label.textColor = .white
@@ -19,7 +21,7 @@ class GeneralView: UIView {
     return label
   }()
 
-  private let totalEarnLabel: UILabel = {
+  let totalEarnLabel: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
     label.textColor = .white
@@ -27,7 +29,7 @@ class GeneralView: UIView {
     return label
   }()
 
-  private let hourlyEarnLabel: UILabel = {
+  let hourlyEarnLabel: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
     label.textColor = .white
@@ -35,6 +37,8 @@ class GeneralView: UIView {
     label.layer.opacity = 0.8
     return label
   }()
+
+  // MARK: - Initialization
 
   override init(frame: CGRect) {
     super.init(frame: frame)
@@ -49,6 +53,9 @@ class GeneralView: UIView {
     fatalError("init(coder:) has not been implemented")
   }
 
+  // MARK: - Methods
+
+  /// Lays out subviews.
   override func layoutSubviews() {
     super.layoutSubviews()
     NSLayoutConstraint.activate([
@@ -66,12 +73,14 @@ class GeneralView: UIView {
       ])
   }
 
+  /// Tells the delegate a layer's bounds have changed.
   override func layoutSublayers(of layer: CALayer) {
     super.layoutSublayers(of: layer)
     fitSizes()
     self.applyGradient(startColor: UIColor.random.cgColor, endColor: UIColor.random.cgColor)
   }
 
+  /// Populates the view's properties with an offer
   func populate(offer: Offer) {
     fitSizes()
     titleLabel.text = offer.title
@@ -79,12 +88,14 @@ class GeneralView: UIView {
     hourlyEarnLabel.text =  String(format: NSLocalizedString("hourlyEarn", comment: ""), offer.earningHourly.toCurrency)
   }
 
+  /// Performs any clean up necessary to prepare the view for use again.
   func prepareForReuse() {
     titleLabel.text = nil
     totalEarnLabel.text = nil
     hourlyEarnLabel.text = nil
   }
 
+  /// Resizes and moves the receiver views so it just encloses its subviews.
   private func fitSizes() {
     totalEarnLabel.sizeToFit()
     hourlyEarnLabel.sizeToFit()
