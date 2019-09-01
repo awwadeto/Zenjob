@@ -31,7 +31,11 @@ extension OfferViewController {
           self.shiftsView.calendarButton.isEnabled = false
         }
       } else {
-        print("\(error?.localizedDescription)")
+        DispatchQueue.main.async {
+          if let error = error {
+            self.showAlert(error: error)
+          }
+        }
       }
     }
   }
