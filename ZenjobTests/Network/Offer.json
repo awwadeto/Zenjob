@@ -1,0 +1,51 @@
+{
+  "id": "g3pfhmFPmimg11",
+  "jobMatchUuid": "c68ddb4b-b7a7-407a-8d20-3abbd3e8019a",
+  "jobCategoryKey": "security",
+  "title": "imma test",
+  "description": null,
+  "instructions": null,
+  "companyName": "Zenjob",
+  "companyLogoUrl": "https://d1psclnqswh9tz.cloudfront.net/company/zEmYoSk5iVu1WHPadSd1jg/logo_1508329537.png?Expires=1567375200&Signature=lFPb7-l8fdNUTnw6JD4qIa-zca0uW5Y~Y~fi1lK~sHZ2TFB4Gi1uONfCNYul3690UsIGFdob-togf9S7re0ZFZoUo1rA-aNy~OvO600AFScCqQ2K8qnczUrRV4ImHFXrk2QGhC2AGI~nGnCVX8m3GlcpQhdmGUdgMn7hvJtyV~uzFkn45FRfbbbhJnJrl89Pfdc73xDRfnko93Eaxfh51spxYF63veWYPtRc6D6fhS4spTgtbBgpRFBHgyaKrjUJfbfbY10CL7ZyWgsVsCmPhJfYRDm73hWFKYgYp-bUzgWAtmhJflmc1I-Md2cQE6EjOzMl8oH5VUPsBLuxyQstxw__&Key-Pair-Id=APKAJZ2BSKQRZSPVVG5A",
+  "minutesSum": "360",
+  "hourSum": null,
+  "breakTypes": [
+    {
+      "minutes": 0,
+      "description": "Pause bei < 6 Stunden Arbeitszeit"
+    }
+  ],
+  "shifts": [
+    {
+      "beginDate": "2018-12-06T09:00:00+01:00",
+      "endDate": "2018-12-06T15:00:00+01:00",
+      "breakTypes": 0
+    }
+  ],
+  "earningTotal": "63.00 EUR",
+  "earningHourly": "10.50 EUR",
+  "pricingTables": [
+    {
+      "isSummary": true,
+      "times": null,
+      "minutes": 360,
+      "name": "Basislohn",
+      "unpaid": false,
+      "earningHourly": "10.50 EUR",
+      "earningTotal": "63.00 EUR"
+    }
+  ],
+  "location": {
+    "locationName": "Zenjob HQ",
+    "locationDisplayName": "TestHQ",
+    "street": "asdasd",
+    "streetNumber": "asda123",
+    "supplementary": null,
+    "postalCode": "cvfgf",
+    "city": "Berlin city",
+    "district": "Moabit district",
+    "locationSearchString": "Berlin, Germany",
+    "locationLongitude": 13.404954,
+    "locationLatitude": 52.5200066
+  }
+}

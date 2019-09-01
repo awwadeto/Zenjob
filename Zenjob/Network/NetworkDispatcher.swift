@@ -95,4 +95,8 @@ public class NetworkDispatcher: Dispatcher {
     return urlRequest
   }
 
+  public func setSession(session: URLSession) {
+    self.session = session
+  }
+
 }

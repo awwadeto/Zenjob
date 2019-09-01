@@ -1,0 +1,543 @@
+{
+  "offset": 0,
+  "max": 10,
+  "total": 91,
+  "newestTimestamp": 1544109906369111,
+  "offers": [
+    {
+      "companyLogoUrl": "https://d1psclnqswh9tz.cloudfront.net/company/zEmYoSk5iVu1WHPadSd1jg/logo_1508329537.png?Expires=1567375200&Signature=lFPb7-l8fdNUTnw6JD4qIa-zca0uW5Y~Y~fi1lK~sHZ2TFB4Gi1uONfCNYul3690UsIGFdob-togf9S7re0ZFZoUo1rA-aNy~OvO600AFScCqQ2K8qnczUrRV4ImHFXrk2QGhC2AGI~nGnCVX8m3GlcpQhdmGUdgMn7hvJtyV~uzFkn45FRfbbbhJnJrl89Pfdc73xDRfnko93Eaxfh51spxYF63veWYPtRc6D6fhS4spTgtbBgpRFBHgyaKrjUJfbfbY10CL7ZyWgsVsCmPhJfYRDm73hWFKYgYp-bUzgWAtmhJflmc1I-Md2cQE6EjOzMl8oH5VUPsBLuxyQstxw__&Key-Pair-Id=APKAJZ2BSKQRZSPVVG5A",
+      "minutesSum": "360",
+      "hourSum": null,
+      "breakTypes": [
+        {
+          "minutes": 0,
+          "description": "Pause bei < 6 Stunden Arbeitszeit"
+        }
+      ],
+      "shifts": [
+        {
+          "beginDate": "2018-12-06T09:00:00+01:00",
+          "endDate": "2018-12-06T15:00:00+01:00",
+          "breakTypes": 0
+        }
+      ],
+      "earningTotal": "63.00 EUR",
+      "earningHourly": "10.50 EUR",
+      "pricingTables": [
+        {
+          "isSummary": true,
+          "times": null,
+          "minutes": 360,
+          "name": "Basislohn",
+          "unpaid": false,
+          "earningHourly": "10.50 EUR",
+          "earningTotal": "63.00 EUR"
+        }
+      ],
+      "location": {
+        "locationName": "Zenjob HQ",
+        "locationDisplayName": "TestHQ",
+        "street": "asdasd",
+        "streetNumber": "asda123",
+        "supplementary": null,
+        "postalCode": "cvfgf",
+        "city": "Berlin city",
+        "district": "Moabit district",
+        "locationSearchString": "Berlin, Germany",
+        "locationLongitude": 13.404954,
+        "locationLatitude": 52.5200066
+      }
+    },
+    {
+      "id": "i_TBkrB9g7uQ",
+      "jobMatchUuid": "bc60b30b-9e50-48f9-bf80-13f8152ea931",
+      "jobCategoryKey": "Helper",
+      "title": "2312312",
+      "description": "3123",
+      "instructions": "213123",
+      "companyName": "qweqwe",
+      "companyLogoUrl": "",
+      "minutesSum": "510",
+      "hourSum": null,
+      "breakTypes": [
+        {
+          "minutes": 30,
+          "description": "Pause bei 6 - 9 Stunden Arbeitszeit"
+        }
+      ],
+      "shifts": [
+        {
+          "beginDate": "2018-12-07T08:00:00+01:00",
+          "endDate": "2018-12-07T17:00:00+01:00",
+          "breakTypes": 30
+        },
+        {
+          "beginDate": "2018-12-08T08:00:00+01:00",
+          "endDate": "2018-12-08T17:00:00+01:00",
+          "breakTypes": 30
+        }
+      ],
+      "earningTotal": "89.25 EUR",
+      "earningHourly": "10.50 EUR",
+      "pricingTables": [
+        {
+          "isSummary": true,
+          "times": null,
+          "minutes": 510,
+          "name": "Basislohn",
+          "unpaid": false,
+          "earningHourly": "10.50 EUR",
+          "earningTotal": "89.25 EUR"
+        },
+        {
+          "isSummary": false,
+          "times": 1,
+          "minutes": 30,
+          "name": "Pause",
+          "unpaid": true,
+          "earningHourly": "0.00 EUR",
+          "earningTotal": "0.00 EUR"
+        }
+      ],
+      "location": {
+        "locationName": "qeq",
+        "locationDisplayName": "qeq",
+        "street": "qeqw",
+        "streetNumber": "qwe",
+        "supplementary": null,
+        "postalCode": "qwe",
+        "city": "qwe",
+        "district": "qwe",
+        "locationSearchString": "Rosenthaler Straße, Berlin, Germany",
+        "locationLongitude": 13.4034965,
+        "locationLatitude": 52.5266394
+      }
+    },
+    {
+      "id": "Tlc2fcRDcApg",
+      "jobMatchUuid": "5b068aec-fd3e-44be-951b-d576853fb44b",
+      "jobCategoryKey": "security",
+      "title": "imma test",
+      "description": null,
+      "instructions": null,
+      "companyName": "Zenjob",
+      "companyLogoUrl": "https://d1psclnqswh9tz.cloudfront.net/company/zEmYoSk5iVu1WHPadSd1jg/logo_1508329537.png?Expires=1567375200&Signature=lFPb7-l8fdNUTnw6JD4qIa-zca0uW5Y~Y~fi1lK~sHZ2TFB4Gi1uONfCNYul3690UsIGFdob-togf9S7re0ZFZoUo1rA-aNy~OvO600AFScCqQ2K8qnczUrRV4ImHFXrk2QGhC2AGI~nGnCVX8m3GlcpQhdmGUdgMn7hvJtyV~uzFkn45FRfbbbhJnJrl89Pfdc73xDRfnko93Eaxfh51spxYF63veWYPtRc6D6fhS4spTgtbBgpRFBHgyaKrjUJfbfbY10CL7ZyWgsVsCmPhJfYRDm73hWFKYgYp-bUzgWAtmhJflmc1I-Md2cQE6EjOzMl8oH5VUPsBLuxyQstxw__&Key-Pair-Id=APKAJZ2BSKQRZSPVVG5A",
+      "minutesSum": "360",
+      "hourSum": null,
+      "breakTypes": [
+        {
+          "minutes": 0,
+          "description": "Pause bei < 6 Stunden Arbeitszeit"
+        }
+      ],
+      "shifts": [
+        {
+          "beginDate": "2018-12-07T09:00:00+01:00",
+          "endDate": "2018-12-07T15:00:00+01:00",
+          "breakTypes": 0
+        }
+      ],
+      "earningTotal": "63.00 EUR",
+      "earningHourly": "10.50 EUR",
+      "pricingTables": [
+        {
+          "isSummary": true,
+          "times": null,
+          "minutes": 360,
+          "name": "Basislohn",
+          "unpaid": false,
+          "earningHourly": "10.50 EUR",
+          "earningTotal": "63.00 EUR"
+        }
+      ],
+      "location": {
+        "locationName": "Zenjob HQ",
+        "locationDisplayName": "TestHQ",
+        "street": "asdasd",
+        "streetNumber": "asda123",
+        "supplementary": null,
+        "postalCode": "cvfgf",
+        "city": "Berlin city",
+        "district": "Moabit district",
+        "locationSearchString": "Berlin, Germany",
+        "locationLongitude": 13.404954,
+        "locationLatitude": 52.5200066
+      }
+    },
+    {
+      "id": "taAvYcsHCbjQ",
+      "jobMatchUuid": "317943c3-4868-4f9b-a854-98359aa95259",
+      "jobCategoryKey": "security",
+      "title": "imma test2",
+      "description": null,
+      "instructions": null,
+      "companyName": "Zenjob",
+      "companyLogoUrl": "https://d1psclnqswh9tz.cloudfront.net/company/zEmYoSk5iVu1WHPadSd1jg/logo_1508329537.png?Expires=1567375200&Signature=lFPb7-l8fdNUTnw6JD4qIa-zca0uW5Y~Y~fi1lK~sHZ2TFB4Gi1uONfCNYul3690UsIGFdob-togf9S7re0ZFZoUo1rA-aNy~OvO600AFScCqQ2K8qnczUrRV4ImHFXrk2QGhC2AGI~nGnCVX8m3GlcpQhdmGUdgMn7hvJtyV~uzFkn45FRfbbbhJnJrl89Pfdc73xDRfnko93Eaxfh51spxYF63veWYPtRc6D6fhS4spTgtbBgpRFBHgyaKrjUJfbfbY10CL7ZyWgsVsCmPhJfYRDm73hWFKYgYp-bUzgWAtmhJflmc1I-Md2cQE6EjOzMl8oH5VUPsBLuxyQstxw__&Key-Pair-Id=APKAJZ2BSKQRZSPVVG5A",
+      "minutesSum": "360",
+      "hourSum": null,
+      "breakTypes": [
+        {
+          "minutes": 0,
+          "description": "Pause bei < 6 Stunden Arbeitszeit"
+        }
+      ],
+      "shifts": [
+        {
+          "beginDate": "2018-12-07T09:00:00+01:00",
+          "endDate": "2018-12-07T15:00:00+01:00",
+          "breakTypes": 0
+        }
+      ],
+      "earningTotal": "63.00 EUR",
+      "earningHourly": "10.50 EUR",
+      "pricingTables": [
+        {
+          "isSummary": true,
+          "times": null,
+          "minutes": 360,
+          "name": "Basislohn",
+          "unpaid": false,
+          "earningHourly": "10.50 EUR",
+          "earningTotal": "63.00 EUR"
+        }
+      ],
+      "location": {
+        "locationName": "Zenjob HQ",
+        "locationDisplayName": "TestHQ",
+        "street": "asdasd",
+        "streetNumber": "asda123",
+        "supplementary": null,
+        "postalCode": "cvfgf",
+        "city": "Berlin city",
+        "district": "Moabit district",
+        "locationSearchString": "Berlin, Germany",
+        "locationLongitude": 13.404954,
+        "locationLatitude": 52.5200066
+      }
+    },
+    {
+      "id": "jdu26LMEskgw",
+      "jobMatchUuid": "307b749f-6a3e-41d0-836b-78265ab7cc6a",
+      "jobCategoryKey": "waiter",
+      "title": "service",
+      "description": "test",
+      "instructions": "test",
+      "companyName": "Zenjob",
+      "companyLogoUrl": "https://d1psclnqswh9tz.cloudfront.net/company/zEmYoSk5iVu1WHPadSd1jg/logo_1508329537.png?Expires=1567375200&Signature=lFPb7-l8fdNUTnw6JD4qIa-zca0uW5Y~Y~fi1lK~sHZ2TFB4Gi1uONfCNYul3690UsIGFdob-togf9S7re0ZFZoUo1rA-aNy~OvO600AFScCqQ2K8qnczUrRV4ImHFXrk2QGhC2AGI~nGnCVX8m3GlcpQhdmGUdgMn7hvJtyV~uzFkn45FRfbbbhJnJrl89Pfdc73xDRfnko93Eaxfh51spxYF63veWYPtRc6D6fhS4spTgtbBgpRFBHgyaKrjUJfbfbY10CL7ZyWgsVsCmPhJfYRDm73hWFKYgYp-bUzgWAtmhJflmc1I-Md2cQE6EjOzMl8oH5VUPsBLuxyQstxw__&Key-Pair-Id=APKAJZ2BSKQRZSPVVG5A",
+      "minutesSum": "180",
+      "hourSum": null,
+      "breakTypes": [
+        {
+          "minutes": 0,
+          "description": "Pause bei < 6 Stunden Arbeitszeit"
+        }
+      ],
+      "shifts": [
+        {
+          "beginDate": "2018-12-07T10:00:00+01:00",
+          "endDate": "2018-12-07T13:00:00+01:00",
+          "breakTypes": 0
+        }
+      ],
+      "earningTotal": "31.50 EUR",
+      "earningHourly": "10.50 EUR",
+      "pricingTables": [
+        {
+          "isSummary": true,
+          "times": null,
+          "minutes": 180,
+          "name": "Basislohn",
+          "unpaid": false,
+          "earningHourly": "10.50 EUR",
+          "earningTotal": "31.50 EUR"
+        }
+      ],
+      "location": {
+        "locationName": "Zenjob Test 1",
+        "locationDisplayName": "Zenjob Test 1",
+        "street": "asdasd12312",
+        "streetNumber": "1337",
+        "supplementary": null,
+        "postalCode": "12051",
+        "city": "Berlin",
+        "district": "Berlin",
+        "locationSearchString": "Rosenthaler Straße, Berlin, Germany",
+        "locationLongitude": 13.4034965,
+        "locationLatitude": 52.5266394
+      }
+    },
+    {
+      "id": "UOhKVpbfiiuA",
+      "jobMatchUuid": "24a69104-5d58-4798-9a87-9933051cf371",
+      "jobCategoryKey": "security",
+      "title": "imma test",
+      "description": null,
+      "instructions": null,
+      "companyName": "Zenjob",
+      "companyLogoUrl": "https://d1psclnqswh9tz.cloudfront.net/company/zEmYoSk5iVu1WHPadSd1jg/logo_1508329537.png?Expires=1567375200&Signature=lFPb7-l8fdNUTnw6JD4qIa-zca0uW5Y~Y~fi1lK~sHZ2TFB4Gi1uONfCNYul3690UsIGFdob-togf9S7re0ZFZoUo1rA-aNy~OvO600AFScCqQ2K8qnczUrRV4ImHFXrk2QGhC2AGI~nGnCVX8m3GlcpQhdmGUdgMn7hvJtyV~uzFkn45FRfbbbhJnJrl89Pfdc73xDRfnko93Eaxfh51spxYF63veWYPtRc6D6fhS4spTgtbBgpRFBHgyaKrjUJfbfbY10CL7ZyWgsVsCmPhJfYRDm73hWFKYgYp-bUzgWAtmhJflmc1I-Md2cQE6EjOzMl8oH5VUPsBLuxyQstxw__&Key-Pair-Id=APKAJZ2BSKQRZSPVVG5A",
+      "minutesSum": "360",
+      "hourSum": null,
+      "breakTypes": [
+        {
+          "minutes": 0,
+          "description": "Pause bei < 6 Stunden Arbeitszeit"
+        }
+      ],
+      "shifts": [
+        {
+          "beginDate": "2018-12-08T09:00:00+01:00",
+          "endDate": "2018-12-08T15:00:00+01:00",
+          "breakTypes": 0
+        }
+      ],
+      "earningTotal": "63.00 EUR",
+      "earningHourly": "10.50 EUR",
+      "pricingTables": [
+        {
+          "isSummary": true,
+          "times": null,
+          "minutes": 360,
+          "name": "Basislohn",
+          "unpaid": false,
+          "earningHourly": "10.50 EUR",
+          "earningTotal": "63.00 EUR"
+        }
+      ],
+      "location": {
+        "locationName": "Zenjob HQ",
+        "locationDisplayName": "TestHQ",
+        "street": "asdasd",
+        "streetNumber": "asda123",
+        "supplementary": null,
+        "postalCode": "cvfgf",
+        "city": "Berlin city",
+        "district": "Moabit district",
+        "locationSearchString": "Berlin, Germany",
+        "locationLongitude": 13.404954,
+        "locationLatitude": 52.5200066
+      }
+    },
+    {
+      "id": "rms2wVSG8yjA",
+      "jobMatchUuid": "ea8c31b1-fb5c-4d22-bfca-21e8099eb590",
+      "jobCategoryKey": "security",
+      "title": "imma test3",
+      "description": null,
+      "instructions": null,
+      "companyName": "Zenjob",
+      "companyLogoUrl": "https://d1psclnqswh9tz.cloudfront.net/company/zEmYoSk5iVu1WHPadSd1jg/logo_1508329537.png?Expires=1567375200&Signature=lFPb7-l8fdNUTnw6JD4qIa-zca0uW5Y~Y~fi1lK~sHZ2TFB4Gi1uONfCNYul3690UsIGFdob-togf9S7re0ZFZoUo1rA-aNy~OvO600AFScCqQ2K8qnczUrRV4ImHFXrk2QGhC2AGI~nGnCVX8m3GlcpQhdmGUdgMn7hvJtyV~uzFkn45FRfbbbhJnJrl89Pfdc73xDRfnko93Eaxfh51spxYF63veWYPtRc6D6fhS4spTgtbBgpRFBHgyaKrjUJfbfbY10CL7ZyWgsVsCmPhJfYRDm73hWFKYgYp-bUzgWAtmhJflmc1I-Md2cQE6EjOzMl8oH5VUPsBLuxyQstxw__&Key-Pair-Id=APKAJZ2BSKQRZSPVVG5A",
+      "minutesSum": "360",
+      "hourSum": null,
+      "breakTypes": [
+        {
+          "minutes": 0,
+          "description": "Pause bei < 6 Stunden Arbeitszeit"
+        }
+      ],
+      "shifts": [
+        {
+          "beginDate": "2018-12-08T09:00:00+01:00",
+          "endDate": "2018-12-08T15:00:00+01:00",
+          "breakTypes": 0
+        }
+      ],
+      "earningTotal": "63.00 EUR",
+      "earningHourly": "10.50 EUR",
+      "pricingTables": [
+        {
+          "isSummary": true,
+          "times": null,
+          "minutes": 360,
+          "name": "Basislohn",
+          "unpaid": false,
+          "earningHourly": "10.50 EUR",
+          "earningTotal": "63.00 EUR"
+        }
+      ],
+      "location": {
+        "locationName": "Zenjob HQ",
+        "locationDisplayName": "TestHQ",
+        "street": "asdasd",
+        "streetNumber": "asda123",
+        "supplementary": null,
+        "postalCode": "cvfgf",
+        "city": "Berlin city",
+        "district": "Moabit district",
+        "locationSearchString": "Berlin, Germany",
+        "locationLongitude": 13.404954,
+        "locationLatitude": 52.5200066
+      }
+    },
+    {
+      "id": "4T-M3xX0nSkw",
+      "jobMatchUuid": "d0076be7-d2b0-460b-9fb5-14ed64a0f01c",
+      "jobCategoryKey": "Helper",
+      "title": "2312312",
+      "description": "3123",
+      "instructions": "213123",
+      "companyName": "qweqwe",
+      "companyLogoUrl": "",
+      "minutesSum": "390",
+      "hourSum": null,
+      "breakTypes": [
+        {
+          "minutes": 30,
+          "description": "Pause bei 6 - 9 Stunden Arbeitszeit"
+        }
+      ],
+      "shifts": [
+        {
+          "beginDate": "2018-12-08T10:00:00+01:00",
+          "endDate": "2018-12-08T17:00:00+01:00",
+          "breakTypes": 30
+        }
+      ],
+      "earningTotal": "68.25 EUR",
+      "earningHourly": "10.50 EUR",
+      "pricingTables": [
+        {
+          "isSummary": true,
+          "times": null,
+          "minutes": 390,
+          "name": "Basislohn",
+          "unpaid": false,
+          "earningHourly": "10.50 EUR",
+          "earningTotal": "68.25 EUR"
+        },
+        {
+          "isSummary": false,
+          "times": 1,
+          "minutes": 30,
+          "name": "Pause",
+          "unpaid": true,
+          "earningHourly": "0.00 EUR",
+          "earningTotal": "0.00 EUR"
+        }
+      ],
+      "location": {
+        "locationName": "qeq",
+        "locationDisplayName": "qeq",
+        "street": "qeqw",
+        "streetNumber": "qwe",
+        "supplementary": null,
+        "postalCode": "qwe",
+        "city": "qwe",
+        "district": "qwe",
+        "locationSearchString": "Rosenthaler Straße, Berlin, Germany",
+        "locationLongitude": 13.4034965,
+        "locationLatitude": 52.5266394
+      }
+    },
+    {
+      "id": "jJB8DzAWD6qw",
+      "jobMatchUuid": "02cfaacd-2a73-4e14-8760-4a91237de7af",
+      "jobCategoryKey": "Helper",
+      "title": "Test",
+      "description": null,
+      "instructions": null,
+      "companyName": "Ana\"s test company",
+      "companyLogoUrl": "",
+      "minutesSum": "390",
+      "hourSum": null,
+      "breakTypes": [
+        {
+          "minutes": 30,
+          "description": "Pause bei 6 - 9 Stunden Arbeitszeit"
+        }
+      ],
+      "shifts": [
+        {
+          "beginDate": "2018-12-09T00:00:00+01:00",
+          "endDate": "2018-12-09T07:00:00+01:00",
+          "breakTypes": 30
+        }
+      ],
+      "earningTotal": "102.38 EUR",
+      "earningHourly": "15.75 EUR",
+      "pricingTables": [
+        {
+          "isSummary": true,
+          "times": null,
+          "minutes": 390,
+          "name": "Sonntagslohn",
+          "unpaid": false,
+          "earningHourly": "15.75 EUR",
+          "earningTotal": "102.38 EUR"
+        },
+        {
+          "isSummary": false,
+          "times": 1,
+          "minutes": 30,
+          "name": "Pause",
+          "unpaid": true,
+          "earningHourly": "0.00 EUR",
+          "earningTotal": "0.00 EUR"
+        }
+      ],
+      "location": {
+        "locationName": "another location",
+        "locationDisplayName": "another location",
+        "street": null,
+        "streetNumber": null,
+        "supplementary": null,
+        "postalCode": null,
+        "city": null,
+        "district": null,
+        "locationSearchString": null,
+        "locationLongitude": null,
+        "locationLatitude": null
+      }
+    },
+    {
+      "id": "2-7WWshhHbnQ",
+      "jobMatchUuid": "62c51647-f1f1-494f-bcdd-c2ed8f7fbd2d",
+      "jobCategoryKey": "security",
+      "title": "imma test3",
+      "description": null,
+      "instructions": null,
+      "companyName": "Zenjob",
+      "companyLogoUrl": "https://d1psclnqswh9tz.cloudfront.net/company/zEmYoSk5iVu1WHPadSd1jg/logo_1508329537.png?Expires=1567375200&Signature=lFPb7-l8fdNUTnw6JD4qIa-zca0uW5Y~Y~fi1lK~sHZ2TFB4Gi1uONfCNYul3690UsIGFdob-togf9S7re0ZFZoUo1rA-aNy~OvO600AFScCqQ2K8qnczUrRV4ImHFXrk2QGhC2AGI~nGnCVX8m3GlcpQhdmGUdgMn7hvJtyV~uzFkn45FRfbbbhJnJrl89Pfdc73xDRfnko93Eaxfh51spxYF63veWYPtRc6D6fhS4spTgtbBgpRFBHgyaKrjUJfbfbY10CL7ZyWgsVsCmPhJfYRDm73hWFKYgYp-bUzgWAtmhJflmc1I-Md2cQE6EjOzMl8oH5VUPsBLuxyQstxw__&Key-Pair-Id=APKAJZ2BSKQRZSPVVG5A",
+      "minutesSum": "360",
+      "hourSum": null,
+      "breakTypes": [
+        {
+          "minutes": 0,
+          "description": "Pause bei < 6 Stunden Arbeitszeit"
+        }
+      ],
+      "shifts": [
+        {
+          "beginDate": "2018-12-09T09:00:00+01:00",
+          "endDate": "2018-12-09T15:00:00+01:00",
+          "breakTypes": 0
+        }
+      ],
+      "earningTotal": "94.50 EUR",
+      "earningHourly": "15.75 EUR",
+      "pricingTables": [
+        {
+          "isSummary": true,
+          "times": null,
+          "minutes": 360,
+          "name": "Sonntagslohn",
+          "unpaid": false,
+          "earningHourly": "15.75 EUR",
+          "earningTotal": "94.50 EUR"
+        }
+      ],
+      "location": {
+        "locationName": "Zenjob HQ",
+        "locationDisplayName": "TestHQ",
+        "street": "asdasd",
+        "streetNumber": "asda123",
+        "supplementary": null,
+        "postalCode": "cvfgf",
+        "city": "Berlin city",
+        "district": "Moabit district",
+        "locationSearchString": "Berlin, Germany",
+        "locationLongitude": 13.404954,
+        "locationLatitude": 52.5200066
+      }
+    }
+  ]
+}

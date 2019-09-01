@@ -47,6 +47,10 @@ class MapViewController: UIViewController {
     fatalError("init(coder:) has not been implemented")
   }
 
+  deinit {
+    print("============= Deinit \(self) =============")
+  }
+
   // MARK: - Methods
 
   override func viewDidLoad() {

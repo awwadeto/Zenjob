@@ -43,3 +43,6 @@
 
 // GeneralView
 hourlyEarn = "%@ pro Stunde";
+
+//
+"The data couldn’t be read because it is missing." = "Die Daten konnten nicht gelesen werden, da sie fehlen.";

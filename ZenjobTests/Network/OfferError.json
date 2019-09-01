@@ -1,0 +1,62 @@
+{
+      "id": "i_TBkrB9g7uQ",
+      "description": "3123",
+      "instructions": "213123",
+      "companyName": "qweqwe",
+      "companyLogoUrl": "",
+      "minutesSum": "510",
+      "hourSum": null,
+      "breakTypes": [
+        {
+          "minutes": 30,
+          "description": "Pause bei 6 - 9 Stunden Arbeitszeit"
+        }
+      ],
+      "shifts": [
+        {
+          "beginDate": "2018-12-07T08:00:00+01:00",
+          "endDate": "2018-12-07T17:00:00+01:00",
+          "breakTypes": 30
+        },
+        {
+          "beginDate": "2018-12-08T08:00:00+01:00",
+          "endDate": "2018-12-08T17:00:00+01:00",
+          "breakTypes": 30
+        }
+      ],
+      "earningTotal": "89.25 EUR",
+      "earningHourly": "10.50 EUR",
+      "pricingTables": [
+        {
+          "isSummary": true,
+          "times": null,
+          "minutes": 510,
+          "name": "Basislohn",
+          "unpaid": false,
+          "earningHourly": "10.50 EUR",
+          "earningTotal": "89.25 EUR"
+        },
+        {
+          "isSummary": false,
+          "times": 1,
+          "minutes": 30,
+          "name": "Pause",
+          "unpaid": true,
+          "earningHourly": "0.00 EUR",
+          "earningTotal": "0.00 EUR"
+        }
+      ],
+      "location": {
+        "locationName": "qeq",
+        "locationDisplayName": "qeq",
+        "street": "qeqw",
+        "streetNumber": "qwe",
+        "supplementary": null,
+        "postalCode": "qwe",
+        "city": "qwe",
+        "district": "qwe",
+        "locationSearchString": "Rosenthaler Straße, Berlin, Germany",
+        "locationLongitude": 13.4034965,
+        "locationLatitude": 52.5266394
+      }
+    }

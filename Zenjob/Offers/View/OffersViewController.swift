@@ -15,7 +15,7 @@ class OffersViewController: UICollectionViewController {
   private let refreshControl = UIRefreshControl()
   var viewModel: OffersViewModel
 
-  private let emptyStateMessage: UILabel = {
+  let emptyStateMessage: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
     label.text = "No available offers. Pull to refresh".localized
@@ -97,7 +97,11 @@ class OffersViewController: UICollectionViewController {
 
   /// Fetch offers from offset '0'
   @objc func refreshOffers() {
-    viewModel.fetchOffers(completion: { })
+    viewModel.fetchOffers(completion: { [weak self] in
+      DispatchQueue.main.async {
+        self?.refreshControl.endRefreshing()
+      }
+    })
   }
 
   func showEmptyState() {
