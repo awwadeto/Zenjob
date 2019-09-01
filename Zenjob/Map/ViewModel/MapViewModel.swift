@@ -10,8 +10,17 @@ import Foundation
 
 class MapViewModel {
 
+  // MARK: - Properites
+
   var location: Location
 
+  // MARK: - Initialization
+
+  
+  /**
+   Initialize a new MapViewModel.
+   - Parameter location: Location object from an offer
+   */
   init(location: Location) {
     self.location = location
   }

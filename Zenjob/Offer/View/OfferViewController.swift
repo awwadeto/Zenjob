@@ -7,9 +7,10 @@
 //
 
 import UIKit
-import EventKit
 
 class OfferViewController: UIViewController, UIScrollViewDelegate {
+
+  // MARK: - Properites
 
   var viewModel: OfferViewModel
 
@@ -66,6 +67,16 @@ class OfferViewController: UIViewController, UIScrollViewDelegate {
     return button
   }()
 
+
+  // MARK: - Initialization
+
+  /**
+   Initialize a new OfferViewController.
+   - Parameters:
+       - dispatcher: Network dispatcher to perform network requests
+       - user: The logged in user
+       - offer: The offer picked by the user
+   */
   init(dispatcher: NetworkDispatcher, user: User, offer: Offer) {
     viewModel = OfferViewModel(dispatcher: dispatcher, user: user, offer: offer)
     viewModel.fetchOffer(completion: {})
@@ -75,6 +86,8 @@ class OfferViewController: UIViewController, UIScrollViewDelegate {
   required init?(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
+
+  // MARK: - Methods
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -110,6 +123,7 @@ class OfferViewController: UIViewController, UIScrollViewDelegate {
     }
   }
 
+  /// Populates the view's properties
   func populate() {
     generalView.populate(offer: viewModel.offer)
     priceView.populate(pricingTables: viewModel.offer.pricingTables)
@@ -119,41 +133,9 @@ class OfferViewController: UIViewController, UIScrollViewDelegate {
     applyView.populate()
   }
 
-  @objc func addToCalendar() {
-    let eventStore = EKEventStore()
-    eventStore.requestAccess(to: .event) { (granted, error) in
-      if granted {
-        let event = EKEvent(eventStore: eventStore)
-        event.title = self.viewModel.offer.title
-        event.startDate = self.viewModel.offer.shifts.first?.beginDate
-        event.endDate = self.viewModel.offer.shifts.last?.endDate
-        event.notes = self.viewModel.offer.instructions
-        event.calendar = eventStore.defaultCalendarForNewEvents
-        do {
-          try eventStore.save(event, span: .thisEvent)
-        } catch let error as NSError {
-          print("failed to save event with error: \(error)")
-        }
-        DispatchQueue.main.async {
-          self.shiftsView.calendarButton.isEnabled = false
-        }
-      } else {
-        print("\(error?.localizedDescription)")
-      }
-    }
-  }
-
-  func scrollViewDidScroll(_ scrollView: UIScrollView) {
-
-  }
-
+  /// Dismiss view on button action
   @objc func dimissView() {
     self.dismiss(animated: true, completion: nil)
-  }
-
-  @objc func showMap() {
-    let controller = MapViewController(location: viewModel.offer.location)
-    self.present(controller, animated: true, completion: nil)
   }
 
   func setupButtons() {
@@ -162,9 +144,11 @@ class OfferViewController: UIViewController, UIScrollViewDelegate {
     placeView.mapButton.addTarget(self, action: #selector(showMap), for: .touchUpInside)
   }
 
+  // Set up the views' appearance
   func setupView() {
     self.view.backgroundColor = .almostWhite
     self.view.addSubview(scrollView)
+
     scrollView.delegate = self
     let stackView = UIStackView()
     stackView.translatesAutoresizingMaskIntoConstraints = false
@@ -197,16 +181,11 @@ class OfferViewController: UIViewController, UIScrollViewDelegate {
 
       generalView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
       generalView.heightAnchor.constraint(equalTo: scrollView.heightAnchor, multiplier: 1 / 3),
-
       priceView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
-
       shiftsView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
       shiftsView.heightAnchor.constraint(equalTo: scrollView.heightAnchor, multiplier: 1 / 3),
-
       placeView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
-
       descriptionView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
-
       applyView.widthAnchor.constraint(equalTo: scrollView.widthAnchor)
     ]
 

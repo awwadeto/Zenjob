@@ -22,6 +22,13 @@ class GetOfferTask: Operation {
 
   // MARK: - Initialization
 
+
+  /**
+   Initialize a new GetOfferTask.
+   - Parameters:
+       - id: Offer id
+       - token: User token needed to authorize the request
+   */
   init(id: String, token: String) {
     self.id = id
     self.token = token

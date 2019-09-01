@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		461E4F8F231BCFA800DF13F6 /* MapView+MapDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461E4F8E231BCFA800DF13F6 /* MapView+MapDelegate.swift */; };
+		461E4F91231BD28300DF13F6 /* OfferView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461E4F90231BD28300DF13F6 /* OfferView+Helper.swift */; };
 		46EA19FA231A257D002CAACD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA19F9231A257D002CAACD /* AppDelegate.swift */; };
 		46EA1A01231A257D002CAACD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46EA1A00231A257D002CAACD /* Assets.xcassets */; };
 		46EA1A04231A257D002CAACD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46EA1A02231A257D002CAACD /* LaunchScreen.storyboard */; };
@@ -79,6 +81,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		461E4F8E231BCFA800DF13F6 /* MapView+MapDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapView+MapDelegate.swift"; sourceTree = "<group>"; };
+		461E4F90231BD28300DF13F6 /* OfferView+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OfferView+Helper.swift"; sourceTree = "<group>"; };
 		46EA19F6231A257D002CAACD /* Zenjob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zenjob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46EA19F9231A257D002CAACD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46EA1A00231A257D002CAACD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -355,6 +359,7 @@
 			isa = PBXGroup;
 			children = (
 				46EA1A86231A6522002CAACD /* OfferViewController.swift */,
+				461E4F90231BD28300DF13F6 /* OfferView+Helper.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -402,6 +407,7 @@
 			isa = PBXGroup;
 			children = (
 				46EA1AAA231A89CA002CAACD /* MapViewController.swift */,
+				461E4F8E231BCFA800DF13F6 /* MapView+MapDelegate.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -555,6 +561,7 @@
 				46EA1AAB231A89CA002CAACD /* MapViewController.swift in Sources */,
 				46EA19FA231A257D002CAACD /* AppDelegate.swift in Sources */,
 				46EA1A62231A5384002CAACD /* OffersViewController.swift in Sources */,
+				461E4F8F231BCFA800DF13F6 /* MapView+MapDelegate.swift in Sources */,
 				46EA1A9D231A83B8002CAACD /* ApplyView.swift in Sources */,
 				46EA1A89231A652D002CAACD /* OfferViewModel.swift in Sources */,
 				46EA1A80231A63D8002CAACD /* Date+Extension.swift in Sources */,
@@ -564,6 +571,7 @@
 				46EA1A82231A63ED002CAACD /* String+Extension.swift in Sources */,
 				46EA1A72231A54FC002CAACD /* LocationView.swift in Sources */,
 				46EA1A76231A5531002CAACD /* MultipleShiftsView.swift in Sources */,
+				461E4F91231BD28300DF13F6 /* OfferView+Helper.swift in Sources */,
 				46EA1A53231A4325002CAACD /* UserRequests.swift in Sources */,
 				46EA1A7C231A6326002CAACD /* UIView+Extension.swift in Sources */,
 				46EA1A9B231A822E002CAACD /* DescriptionView.swift in Sources */,

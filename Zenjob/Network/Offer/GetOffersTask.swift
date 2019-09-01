@@ -22,6 +22,13 @@ class GetOffersTask: Operation {
 
   // MARK: - Initialization
 
+
+  /**
+   Initialize a new GetOffersTask.
+   - Parameters:
+       - offset: Number of offers to skip
+       - token: User token needed to authorize the request
+   */
   init(offset: String, token: String) {
     self.offset = offset
     self.token = token

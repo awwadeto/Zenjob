@@ -22,6 +22,12 @@ class LoginTask: Operation {
 
   // MARK: - Initialization
 
+  /**
+   Initialize a new LoginTask.
+   - Parameters:
+       - username: Username required to authenticte on the server
+       - password: Password associated with the username
+   */
   init(username: String, password: String) {
     self.username = username
     self.password = password

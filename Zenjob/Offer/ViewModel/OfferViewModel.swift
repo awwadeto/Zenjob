@@ -10,6 +10,8 @@ import Foundation
 
 class OfferViewModel {
 
+  // MARK: - Properites
+
   var reloadView: (()->())?
   var showAlert: (()->())?
   var dispatcher: NetworkDispatcher
@@ -18,6 +20,15 @@ class OfferViewModel {
   var error: Error?
   var offerTask: GetOfferTask
 
+  // MARK: - Initialization
+
+  /**
+   Initialize a new OfferViewModel.
+   - Parameters:
+      - dispatcher: Network dispatcher to perform network requests
+      - user: The logged in user
+      - offer: The offer picked by the user
+   */
   init(dispatcher: NetworkDispatcher, user: User, offer: Offer) {
     self.dispatcher = dispatcher
     self.user = user
@@ -25,6 +36,9 @@ class OfferViewModel {
     self.offerTask = GetOfferTask(id: offer.id, token: user.accessToken)
   }
 
+  // MARK: - Methods
+
+  /// Fetches offer details
   func fetchOffer(completion: @escaping () -> Void) {
     offerTask.execute(in: dispatcher) { (offer, error) in
 

@@ -10,6 +10,8 @@ import Foundation
 
 class OffersViewModel {
 
+  // MARK: - Properites
+
   var reloadView: (()->())?
   var showAlert: (()->())?
   var dispatcher: NetworkDispatcher
@@ -22,12 +24,23 @@ class OffersViewModel {
     return offers.count
   }
 
+  // MARK: - Initialization
+
+  /**
+   Initialize a new OffersViewModel.
+   - Parameters:
+     - dispatcher: Network dispatcher to perform network requests
+     - user: The logged in user
+   */
   init(dispatcher: NetworkDispatcher, user: User) {
     self.dispatcher = dispatcher
     self.user = user
     self.offersTask = GetOffersTask(offset: "0", token: user.accessToken)
   }
 
+  // MARK: - Methods
+
+  /// Fetches user's offers
   func fetchOffers(offset: String = "0", completion: @escaping () -> Void) {
     offersTask.offset = offset
     offersTask.execute(in: dispatcher) { (offers, error) in
@@ -50,6 +63,12 @@ class OffersViewModel {
     }
   }
 
+
+  /**
+   Checks if the current offer has multiple shifts.
+   - Parameter row: Index row of the wanted cell
+   - Returns: Bool value of if the offer has multiple shifts or not
+   */
   func isMultipleShifts(row: Int) -> Bool {
     return offers[row].shifts.count > 1
   }

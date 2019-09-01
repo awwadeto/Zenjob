@@ -10,6 +10,8 @@ import UIKit
 
 class OffersViewController: UICollectionViewController {
 
+  // MARK: - Properites
+
   private let refreshControl = UIRefreshControl()
   var viewModel: OffersViewModel
 
@@ -25,6 +27,14 @@ class OffersViewController: UICollectionViewController {
     return label
   }()
 
+  // MARK: - Initialization
+
+  /**
+   Initialize a new OffersViewController.
+   - Parameters:
+   - dispatcher: Network dispatcher to perform network requests
+   - user: The logged in user
+   */
   init(dispatcher: NetworkDispatcher, user: User) {
     viewModel = OffersViewModel(dispatcher: dispatcher, user: user)
     viewModel.fetchOffers(completion: {})
@@ -42,9 +52,10 @@ class OffersViewController: UICollectionViewController {
     fatalError("init(coder:) has not been implemented")
   }
 
+  // MARK: - Methods
+
   override func viewDidLoad() {
     super.viewDidLoad()
-
     self.title = "Explore jobs".localized
     self.view.backgroundColor = .white
     setupRefreshControl()
@@ -52,12 +63,14 @@ class OffersViewController: UICollectionViewController {
     setupBindings()
   }
 
+  /// Set up refresh controller
   func setupRefreshControl() {
     refreshControl.tintColor = .zenPurple
     refreshControl.addTarget(self, action: #selector(refreshOffers), for: .valueChanged)
     refreshControl.attributedTitle = NSAttributedString(string: "Fetching Offers".localized)
   }
 
+  /// Set up collection view
   func setupCollectionView() {
     collectionView.backgroundColor = .white
     collectionView.showsVerticalScrollIndicator = false
@@ -82,6 +95,7 @@ class OffersViewController: UICollectionViewController {
     }
   }
 
+  /// Fetch offers from offset '0'
   @objc func refreshOffers() {
     viewModel.fetchOffers(completion: { })
   }

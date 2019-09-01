@@ -9,7 +9,9 @@
 import UIKit
 import MapKit
 
-class MapViewController: UIViewController, MKMapViewDelegate {
+class MapViewController: UIViewController {
+
+  // MARK: - Properites
 
   var mapView: MKMapView = {
     let mapView = MKMapView()
@@ -29,6 +31,13 @@ class MapViewController: UIViewController, MKMapViewDelegate {
 
   var viewModel: MapViewModel
 
+  
+  // MARK: - Initialization
+
+  /**
+   Initialize a new MapViewController.
+   - Parameter location: Location object from an offer
+   */
   init(location: Location) {
     self.viewModel = MapViewModel(location: location)
     super.init(nibName: nil, bundle: nil)
@@ -38,16 +47,20 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     fatalError("init(coder:) has not been implemented")
   }
 
+  // MARK: - Methods
+
   override func viewDidLoad() {
     super.viewDidLoad()
     setupView()
     setupAnnotation()
   }
 
+  /// Dismiss view on button action
   @objc func dimissView() {
     self.dismiss(animated: true, completion: nil)
   }
 
+  /// Centers the map view on the city's location with a span of 0.01 and appends the annotation on the map
   func setupAnnotation() {
     if let latitude = viewModel.location.locationLatitude, let longitude = viewModel.location.locationLongitude {
       let annotation = MKPointAnnotation()
@@ -59,6 +72,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     }
   }
 
+  // Set up the views' appearance
   func setupView() {
     dismissButton.addTarget(self, action: #selector(dimissView), for: .touchUpInside)
     self.view.addSubview(mapView)
@@ -73,21 +87,8 @@ class MapViewController: UIViewController, MKMapViewDelegate {
       dismissButton.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -30),
       dismissButton.topAnchor.constraint(equalTo: self.view.layoutMarginsGuide.topAnchor),
       dismissButton.heightAnchor.constraint(equalToConstant: 30),
-      dismissButton.widthAnchor.constraint(equalToConstant: 30),
-
+      dismissButton.widthAnchor.constraint(equalToConstant: 30)
       ])
-  }
-
-  func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-    let identifier = "pin"
-    var pinView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKPinAnnotationView
-    if let pinView = pinView {
-      pinView.annotation = annotation
-    } else {
-      pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-      pinView!.pinTintColor = .red
-    }
-    return pinView
   }
 
 }
