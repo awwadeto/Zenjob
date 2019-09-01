@@ -17,6 +17,7 @@ extension UIColor {
   static let zenPink = UIColor(red: 0.980, green: 0.271, blue: 0.451, alpha: 1.0)
   static let lineG =  UIColor(red: 0.880, green: 0.880, blue: 0.880, alpha: 1.00)
 
+  /// Generates a random color from random CGFloat
   class var random: UIColor {
     return UIColor(red: .random(), green: .random(), blue:  .random(), alpha: 1.0)
   }

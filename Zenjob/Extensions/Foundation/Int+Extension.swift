@@ -10,6 +10,8 @@ import Foundation
 
 extension Int {
 
+  /// Converts minutes into formatted string hours
+  /// and it removes any decimal zeros
   var toHours: String {
     let value = Double(self) / 60.0
     return value.truncatingRemainder(dividingBy: 1) == 0 ? String(format: "%.0fh", value) : String(format: "%.1fh", value)

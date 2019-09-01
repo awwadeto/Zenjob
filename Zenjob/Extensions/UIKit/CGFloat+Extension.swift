@@ -9,7 +9,10 @@
 import UIKit
 
 extension CGFloat {
+
+  /// Returns a random CGFloat
   static func random() -> CGFloat {
     return CGFloat(arc4random()) / CGFloat(UInt32.max)
   }
+
 }

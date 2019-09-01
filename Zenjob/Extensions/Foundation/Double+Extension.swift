@@ -10,6 +10,7 @@ import Foundation
 
 extension Double {
 
+  /// Formats double value into a double decimaled string
   var toCurrency: String {
     return String(format: "%.2f€", self)
   }
