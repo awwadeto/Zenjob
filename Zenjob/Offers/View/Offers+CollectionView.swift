@@ -13,7 +13,7 @@ extension OffersViewController: UICollectionViewDelegateFlowLayout {
   /// Asks your data source object to provide a supplementary view to display in the collection view.
   override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
     let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerView", for: indexPath) as! ExploreHeaderView
-    headerView.populate(offers: viewModel.numberOfCells)
+    headerView.populate()
     return headerView
   }
 

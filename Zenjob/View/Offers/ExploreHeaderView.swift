@@ -59,10 +59,11 @@ class ExploreHeaderView: UICollectionReusableView {
     fitSizes()
   }
 
-  func populate(offers: Int = 0) {
+  func populate() {
     fitSizes()
     titleLabel.text = "Explore jobs".localized
-    jobsLabel.text = String(format: NSLocalizedString("jobsNumber", comment: ""), "\(offers)")
+    let total = UserDefaults.standard.integer(forKey: "totalJobs")
+    jobsLabel.text = String(format: NSLocalizedString("jobsNumber", comment: ""), "\(total)")
   }
 
   override func prepareForReuse() {

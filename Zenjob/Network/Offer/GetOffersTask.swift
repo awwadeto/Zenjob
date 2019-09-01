@@ -50,6 +50,11 @@ class GetOffersTask: Operation {
           decoder.dateDecodingStrategy = .iso8601
           do {
             let jsonObject = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSDictionary
+
+            if let total = jsonObject?["total"] as? Int {
+              UserDefaults.standard.set(total, forKey: "totalJobs")
+            }
+            
             if let jsonOffers = jsonObject?["offers"] {
               let data = try JSONSerialization.data(withJSONObject: jsonOffers, options: .init(rawValue: 0))
               let offers = try decoder.decode([Offer].self, from: data)
