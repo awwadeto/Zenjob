@@ -25,7 +25,6 @@
 		46EA19FA231A257D002CAACD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA19F9231A257D002CAACD /* AppDelegate.swift */; };
 		46EA1A01231A257D002CAACD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46EA1A00231A257D002CAACD /* Assets.xcassets */; };
 		46EA1A04231A257D002CAACD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46EA1A02231A257D002CAACD /* LaunchScreen.storyboard */; };
-		46EA1A0F231A257E002CAACD /* ZenjobTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A0E231A257E002CAACD /* ZenjobTests.swift */; };
 		46EA1A1A231A257E002CAACD /* ZenjobUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A19231A257E002CAACD /* ZenjobUITests.swift */; };
 		46EA1A32231A3D75002CAACD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A31231A3D75002CAACD /* User.swift */; };
 		46EA1A34231A3DA6002CAACD /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA1A33231A3DA6002CAACD /* Offer.swift */; };
@@ -115,7 +114,6 @@
 		46EA1A03231A257D002CAACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46EA1A05231A257D002CAACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46EA1A0A231A257E002CAACD /* ZenjobTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZenjobTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		46EA1A0E231A257E002CAACD /* ZenjobTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenjobTests.swift; sourceTree = "<group>"; };
 		46EA1A10231A257E002CAACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46EA1A15231A257E002CAACD /* ZenjobUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZenjobUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46EA1A19231A257E002CAACD /* ZenjobUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenjobUITests.swift; sourceTree = "<group>"; };
@@ -306,7 +304,6 @@
 				461E4FA9231BE53A00DF13F6 /* Offers */,
 				461E4FAC231BE6E100DF13F6 /* Offer */,
 				461E4F92231BE43F00DF13F6 /* Network */,
-				46EA1A0E231A257E002CAACD /* ZenjobTests.swift */,
 				461E4FAF231BE70B00DF13F6 /* Helper.swift */,
 				46EA1A10231A257E002CAACD /* Info.plist */,
 			);
@@ -693,7 +690,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EA1A0F231A257E002CAACD /* ZenjobTests.swift in Sources */,
 				461E4FB4231BE7B700DF13F6 /* OffersViewControllerTests.swift in Sources */,
 				461E4FAB231BE54700DF13F6 /* OffersViewModelTests.swift in Sources */,
 				461E4FAE231BE6F200DF13F6 /* OfferViewModelTests.swift in Sources */,
