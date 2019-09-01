@@ -31,9 +31,11 @@ class GetOffersTask: Operation {
           decoder.dateDecodingStrategy = .iso8601
           do {
             let jsonObject = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSDictionary
-            let data = try JSONSerialization.data(withJSONObject: jsonObject!["offers"], options: .init(rawValue: 0))
-            let offers = try decoder.decode([Offer].self, from: data)
-            completion(offers, nil)
+            if let jsonOffers = jsonObject?["offers"] {
+              let data = try JSONSerialization.data(withJSONObject: jsonOffers, options: .init(rawValue: 0))
+              let offers = try decoder.decode([Offer].self, from: data)
+              completion(offers, nil)
+            }
           } catch {
             print("Failed to decode JSON")
             completion(nil, error)

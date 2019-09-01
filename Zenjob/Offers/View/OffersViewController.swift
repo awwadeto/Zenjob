@@ -27,6 +27,7 @@ class OffersViewController: UICollectionViewController {
 
   init(dispatcher: NetworkDispatcher, user: User) {
     viewModel = OffersViewModel(dispatcher: dispatcher, user: user)
+    viewModel.fetchOffers(completion: {})
 
     let flowLayout = UICollectionViewFlowLayout()
     flowLayout.scrollDirection = .vertical
@@ -82,7 +83,7 @@ class OffersViewController: UICollectionViewController {
   }
 
   @objc func refreshOffers() {
-    viewModel.fetchOffers()
+    viewModel.fetchOffers(completion: { })
   }
 
   func showEmptyState() {

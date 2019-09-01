@@ -16,6 +16,7 @@ class OffersViewModel {
   var user: User
   var offers: [Offer] = []
   var error: Error?
+  var offersTask: GetOffersTask
 
   var numberOfCells: Int {
     return offers.count
@@ -24,11 +25,11 @@ class OffersViewModel {
   init(dispatcher: NetworkDispatcher, user: User) {
     self.dispatcher = dispatcher
     self.user = user
-    self.fetchOffers()
+    self.offersTask = GetOffersTask(offset: "0", token: user.accessToken)
   }
 
-  func fetchOffers(offset: String = "0") {
-    let offersTask = GetOffersTask(offset: offset, token: user.accessToken)
+  func fetchOffers(offset: String = "0", completion: @escaping () -> Void) {
+    offersTask.offset = offset
     offersTask.execute(in: dispatcher) { (offers, error) in
 
       if let error = error {
@@ -44,6 +45,8 @@ class OffersViewModel {
         self.offers += offers
         self.reloadView?()
       }
+
+      completion()
     }
   }
 

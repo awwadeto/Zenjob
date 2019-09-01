@@ -76,7 +76,7 @@ class GeneralView: UIView {
     fitSizes()
     titleLabel.text = offer.title
     totalEarnLabel.text = offer.earningTotal.toCurrency
-    hourlyEarnLabel.text = "\(offer.earningHourly.toCurrency) per hour"
+    hourlyEarnLabel.text =  String(format: NSLocalizedString("hourlyEarn", comment: ""), offer.earningHourly.toCurrency)
   }
 
   func prepareForReuse() {

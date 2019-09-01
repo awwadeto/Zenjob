@@ -21,7 +21,7 @@ extension OffersViewController: UICollectionViewDelegateFlowLayout {
 
   override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     if indexPath.row == viewModel.numberOfCells - 1 {
-      viewModel.fetchOffers(offset: String(viewModel.numberOfCells))
+      viewModel.fetchOffers(offset: String(viewModel.numberOfCells), completion: { })
     }
 
     if viewModel.isMultipleShifts(row: indexPath.row) {

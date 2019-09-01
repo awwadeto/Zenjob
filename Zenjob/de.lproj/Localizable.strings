@@ -37,3 +37,9 @@
 //ApplyView
 "Apply now" = "Jetzt bewerben";
 "Not interested" = "Nicht interessiert";
+
+//UIViewController+Extension
+"Something went wrong" = "Etwas ist schief gelaufen";
+
+// GeneralView
+hourlyEarn = "%@ pro Stunde";

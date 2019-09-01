@@ -68,6 +68,7 @@ class OfferViewController: UIViewController, UIScrollViewDelegate {
 
   init(dispatcher: NetworkDispatcher, user: User, offer: Offer) {
     viewModel = OfferViewModel(dispatcher: dispatcher, user: user, offer: offer)
+    viewModel.fetchOffer(completion: {})
     super.init(nibName: nil, bundle: nil)
   }
 

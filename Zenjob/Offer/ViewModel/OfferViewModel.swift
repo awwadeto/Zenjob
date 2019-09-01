@@ -16,16 +16,16 @@ class OfferViewModel {
   var user: User
   var offer: Offer
   var error: Error?
+  var offerTask: GetOfferTask
 
   init(dispatcher: NetworkDispatcher, user: User, offer: Offer) {
     self.dispatcher = dispatcher
     self.user = user
     self.offer = offer
-    self.fetchOffer()
+    self.offerTask = GetOfferTask(id: offer.id, token: user.accessToken)
   }
 
-  func fetchOffer() {
-    let offerTask = GetOfferTask(id: offer.id, token: user.accessToken)
+  func fetchOffer(completion: @escaping () -> Void) {
     offerTask.execute(in: dispatcher) { (offer, error) in
 
       if let error = error {
@@ -38,6 +38,8 @@ class OfferViewModel {
         self.offer = offer
         self.reloadView?()
       }
+
+      completion()
     }
   }
 
